@@ -1,0 +1,1407 @@
+{
+	"item": {
+		"lazyLoad": [],
+		"uuid": null,
+		"host": "www.walmart.com",
+		"isMobile": false,
+		"isPacLoaded": false,
+		"pacRedirectUrl": "",
+		"isBot": false,
+		"isAdsEnabled": true,
+		"isEsiEnabled": false,
+		"isInitialStateDeferred": true,
+		"isServiceWorkerEnabled": false,
+		"isShellRequest": false,
+		"productId": "36276784",
+		"fetchConfig": {
+			"terraUsePOST": true,
+			"terraFetchUrl": "http://app.prod-a.terra-firma.glb.prod.walmart.com/terra-firma/fetch",
+			"terraAjaxFetchUrl": "/terra-firma/fetch",
+			"useLocation": true,
+			"terraConsumerId": "4b2c4eee-b075-11e7-abc4-cec278b6b50a"
+		},
+		"ccm": {},
+		"deviceType": "desktop",
+		"referer": "https%3A%2F%2Fwww.walmart.com%2Fsearch%2F%3Fquery%3Dbaby%2520food",
+		"verticalId": "standard",
+		"siteMode": 0,
+		"product": {
+			"abstractProductId": "",
+			"addOnServices": {},
+			"carePlans": {},
+			"homeServices": {},
+			"askQuestion": {},
+			"cellCoverageFinder": {
+				"status": "CELL_COVERAGE_FINDER_PROMPTED",
+				"zipCode": "",
+				"availability": "",
+				"heading": "See if this device will work in your area."
+			},
+			"collectionId": "",
+			"completeTheLook": {},
+			"fashionCategoryNavBar": {},
+			"giftCard": { "validationErrors": {} },
+			"idmlMap": {
+				"7CD19RPTO088": {
+					"modules": {
+						"Warranty": {
+							"warranty_length": { "values": ["</p>"], "displayName": "Warranty Length", "displayValue": "</p>" },
+							"warranty_information": {
+								"values": ["</p>"],
+								"displayName": "Warranty Information",
+								"displayValue": "</p>"
+							}
+						},
+						"Directions": {
+							"instructions": {
+								"values": [
+									"Serve at room temperature right out of the pouch or refrigerate for a cool refreshing treat! Refrigerate after opening, serve within 24 hours."
+								],
+								"displayName": "Instructions",
+								"displayValue": "Serve at room temperature right out of the pouch or refrigerate for a cool refreshing treat! Refrigerate after opening, serve within 24 hours."
+							}
+						},
+						"Ingredients": {
+							"ingredients": {
+								"values": [
+									"Organic Bananas, Organic Strawberries, Organic Yogurt (Organic Cultured Pasteurized Milk), Water, Calcium Citrate Malate, Ascorbic Acid (Vitamin C), Citric Acid, Vitamin D"
+								],
+								"displayName": "Ingredients",
+								"displayValue": "Organic Bananas, Organic Strawberries, Organic Yogurt (Organic Cultured Pasteurized Milk), Water, Calcium Citrate Malate, Ascorbic Acid (Vitamin C), Citric Acid, Vitamin D"
+							}
+						},
+						"ProductVideos": {
+							"video_url_1": {
+								"displayName": "Video Url 1",
+								"values": [
+									[
+										{ "duration": { "values": ["88"], "displayName": "Duration", "displayValue": "88" } },
+										{ "language": { "values": ["en-US"], "displayName": "Language", "displayValue": "en-US" } },
+										{
+											"provider": { "values": ["Webcollage"], "displayName": "Provider", "displayValue": "Webcollage" }
+										},
+										{
+											"mp4mobile": {
+												"values": [
+													"https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.mobile.mp4"
+												],
+												"displayName": "mp4mobile",
+												"displayValue": "https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.mobile.mp4"
+											}
+										},
+										{
+											"mp4mobilethumbnail": {
+												"values": [
+													"https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.poster.jpg.w960.jpg"
+												],
+												"displayName": "mp4mobilethumbnail",
+												"displayValue": "https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.poster.jpg.w960.jpg"
+											}
+										},
+										{
+											"mp4mobileposter": {
+												"values": [
+													"https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.poster.jpg.w960.jpg"
+												],
+												"displayName": "mp4mobileposter",
+												"displayValue": "https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.poster.jpg.w960.jpg"
+											}
+										},
+										{
+											"caption_url": {
+												"values": [
+													"https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/55fd8587-659e-4c5a-b45d-77918baeb8e5.vtt.web.vtt"
+												],
+												"displayName": "CaptionUrl",
+												"displayValue": "https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/55fd8587-659e-4c5a-b45d-77918baeb8e5.vtt.web.vtt"
+											}
+										},
+										{
+											"caption_format": {
+												"values": ["webvtt"],
+												"displayName": "CaptionFormat",
+												"displayValue": "webvtt"
+											}
+										},
+										{
+											"caption_language": {
+												"values": ["en-US"],
+												"displayName": "CaptionLanguage",
+												"displayValue": "en-US"
+											}
+										}
+									]
+								]
+							}
+						},
+						"ShortDescription": {
+							"product_short_description": {
+								"values": [
+									"<ul>  <li>USDA ORGANIC CERTIFIED \\xe2\\x80\\x93 A trusted option for your little one ages 2 and up, made with real yogurt* and organic strawberries</li>  <li>WHOLESOME INGREDIENTS \\xe2\\x80\\x93 Non-GMO ingredients sourced from our family of certified organic farmers</li>  <li>DESIGNED FOR KIDS\\' DEVELOPMENT - An excellent source of calcium and Vitamins C &amp; D</li>  <li>TRUSTED BY PARENTS, LOVED BY KIDS \\xe2\\x80\\x93 Non-GMO, no artificial flavors or colors</li>  <li>Certified Kosher Dairy ingredients</li> </ul>"
+								],
+								"displayName": "Product Short Description",
+								"displayValue": "<ul>  <li>USDA ORGANIC CERTIFIED \\xe2\\x80\\x93 A trusted option for your little one ages 2 and up, made with real yogurt* and organic strawberries</li>  <li>WHOLESOME INGREDIENTS \\xe2\\x80\\x93 Non-GMO ingredients sourced from our family of certified organic farmers</li>  <li>DESIGNED FOR KIDS\\' DEVELOPMENT - An excellent source of calcium and Vitamins C &amp; D</li>  <li>TRUSTED BY PARENTS, LOVED BY KIDS \\xe2\\x80\\x93 Non-GMO, no artificial flavors or colors</li>  <li>Certified Kosher Dairy ingredients</li> </ul>"
+							}
+						},
+						"GeneralInfo": {
+							"item_id": { "values": ["36276784"], "displayName": "Item Id", "displayValue": "36276784" },
+							"title": { "values": [""], "displayName": "Title", "displayValue": "" },
+							"category_path_name": {
+								"values": ["Baby/Feeding/Baby Food"],
+								"displayName": "Category Path Name",
+								"displayValue": "Baby/Feeding/Baby Food"
+							},
+							"is_active": { "values": [""], "displayName": "Active", "displayValue": "" },
+							"category_path": {
+								"values": ["0:5427:133283:1001448"],
+								"displayName": "Category Path",
+								"displayValue": "0:5427:133283:1001448"
+							},
+							"item_seller": { "values": [""], "displayName": "Item Seller", "displayValue": "" },
+							"sold_by": { "values": ["Walmart"], "displayName": "Sold By", "displayValue": "Walmart" },
+							"net_sales_ly": {
+								"values": [""],
+								"displayName": "Net sales revenue in last 365 days",
+								"displayValue": ""
+							},
+							"upc": { "values": [""], "displayName": "UPC", "displayValue": "" },
+							"partner_original_base_upc": {
+								"values": [""],
+								"displayName": "Partner Original Base Upc",
+								"displayValue": ""
+							},
+							"display_group_name": { "values": [""], "displayName": "Category Group", "displayValue": "" },
+							"partner_id": { "values": [""], "displayName": "Partner Id", "displayValue": "" },
+							"customer_rating": { "values": [""], "displayName": "Average Rating", "displayValue": "" },
+							"primary_distributor_id": { "values": [""], "displayName": "Primary Distributor Id", "displayValue": "" },
+							"brand": { "values": [""], "displayName": "Brand", "displayValue": "" },
+							"primary_shelf": {
+								"values": ["[\"0\",\"5427\",\"133283\",\"1001448\",\"1224824\",\"1224826\"]"],
+								"displayName": "All Shelves",
+								"displayValue": "[\"0\",\"5427\",\"133283\",\"1001448\",\"1224824\",\"1224826\"]"
+							},
+							"all_shelves": {
+								"values": [
+									"[\"0\",\"5427\",\"133283\",\"1001448\",\"1224824\",\"1224826\"]",
+									"[\"0\",\"5427\",\"133283\",\"1001448\",\"1224824\",\"1224827\"]",
+									"[\"0\",\"5427\",\"3736584\"]",
+									"[\"0\",\"5427\",\"3102958\"]",
+									"[\"0\",\"5427\",\"133283\",\"1001448\",\"3609934\"]",
+									"[\"0\",\"5427\",\"133283\",\"1001448\",\"8034357\"]",
+									"[\"0\",\"976759\",\"1228024\",\"1228017\"]",
+									"[\"0\",\"5427\",\"8399572\",\"2483273\"]",
+									"[\"0\",\"5427\",\"9004775\"]",
+									"[\"0\",\"5427\",\"9993698\",\"6990343\"]",
+									"[\"0\",\"5427\",\"3410465\",\"1899052\"]",
+									"[\"0\",\"5427\",\"133283\",\"1001448\",\"2047143\"]",
+									"[\"0\",\"5427\",\"9993698\",\"5840335\"]",
+									"[\"0\",\"976760\",\"2915579\",\"3093893\",\"1774736\"]",
+									"[\"0\",\"5427\",\"133283\",\"1001448\",\"7514220\"]"
+								],
+								"displayName": "All Shelves",
+								"displayValue": "[\"0\",\"5427\",\"133283\",\"1001448\",\"1224824\",\"1224826\"] [\"0\",\"5427\",\"133283\",\"1001448\",\"1224824\",\"1224827\"] [\"0\",\"5427\",\"3736584\"] [\"0\",\"5427\",\"3102958\"] [\"0\",\"5427\",\"133283\",\"1001448\",\"3609934\"] [\"0\",\"5427\",\"133283\",\"1001448\",\"8034357\"] [\"0\",\"976759\",\"1228024\",\"1228017\"] [\"0\",\"5427\",\"8399572\",\"2483273\"] [\"0\",\"5427\",\"9004775\"] [\"0\",\"5427\",\"9993698\",\"6990343\"] [\"0\",\"5427\",\"3410465\",\"1899052\"] [\"0\",\"5427\",\"133283\",\"1001448\",\"2047143\"] [\"0\",\"5427\",\"9993698\",\"5840335\"] [\"0\",\"976760\",\"2915579\",\"3093893\",\"1774736\"] [\"0\",\"5427\",\"133283\",\"1001448\",\"7514220\"]"
+							},
+							"reporting_hierarchy": {
+								"values": ["41210", "BABY FOOD STAGES 3 AND 4"],
+								"displayName": "Site Taxonomy",
+								"displayValue": "41210 BABY FOOD STAGES 3 AND 4"
+							},
+							"product_type": { "values": ["Baby Foods"], "displayName": "Product Type", "displayValue": "Baby Foods" }
+						},
+						"LongDescription": {
+							"product_long_description": {
+								"values": [
+									"<ul>  <li>USDA ORGANIC CERTIFIED &acirc; A trusted option for your little one ages 2 and up, made with real yogurt* and organic strawberries</li>  <li>WHOLESOME INGREDIENTS &acirc; Non-GMO ingredients sourced from our family of certified organic farmers</li>  <li>DESIGNED FOR KIDS' DEVELOPMENT - An excellent source of calcium and Vitamins C &amp; D</li>  <li>TRUSTED BY PARENTS, LOVED BY KIDS &acirc; Non-GMO, no artificial flavors or colors</li>  <li>Certified Kosher Dairy ingredients</li> </ul>"
+								],
+								"displayName": "Product Long Description",
+								"displayValue": "<ul>  <li>USDA ORGANIC CERTIFIED &acirc; A trusted option for your little one ages 2 and up, made with real yogurt* and organic strawberries</li>  <li>WHOLESOME INGREDIENTS &acirc; Non-GMO ingredients sourced from our family of certified organic farmers</li>  <li>DESIGNED FOR KIDS' DEVELOPMENT - An excellent source of calcium and Vitamins C &amp; D</li>  <li>TRUSTED BY PARENTS, LOVED BY KIDS &acirc; Non-GMO, no artificial flavors or colors</li>  <li>Certified Kosher Dairy ingredients</li> </ul>"
+							}
+						},
+						"Specifications": {
+							"specifications": {
+								"displayName": "Specifications",
+								"values": [
+									[
+										{
+											"features": {
+												"values": ["Organic", "No"],
+												"displayName": "Features",
+												"displayValue": "Organic No"
+											}
+										},
+										{ "brand": { "values": ["Earth's Best"], "displayName": "Brand", "displayValue": "Earth's Best" } },
+										{ "model": { "values": ["C33312N"], "displayName": "Model", "displayValue": "C33312N" } },
+										{
+											"container_type": {
+												"values": ["Pouch"],
+												"displayName": "Container Type",
+												"displayValue": "Pouch"
+											}
+										},
+										{
+											"baby_food_stage": {
+												"values": ["Stage 3"],
+												"displayName": "Baby Food Stage",
+												"displayValue": "Stage 3"
+											}
+										},
+										{
+											"manufacturer_part_number": {
+												"values": ["C33312N"],
+												"displayName": "Manufacturer Part Number",
+												"displayValue": "C33312N"
+											}
+										}
+									]
+								]
+							}
+						},
+						"NutritionFacts": {
+							"serving_information": {
+								"displayName": "Serving Information",
+								"children": [
+									{
+										"displayName": "Serving Size",
+										"values": [
+											[
+												{
+													"serving_size": {
+														"values": ["120.00 g"],
+														"displayName": "Serving Size",
+														"displayValue": "120.00 g"
+													}
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Servings Per Container",
+										"values": [
+											[
+												{
+													"servings_per_container": {
+														"values": ["6"],
+														"displayName": "Servings Per Container",
+														"displayValue": "6"
+													}
+												}
+											]
+										]
+									}
+								]
+							},
+							"calorie_information": {
+								"displayName": "Calorie Information",
+								"children": [
+									{
+										"displayName": "Calories",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Calories"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Calories"
+													}
+												},
+												{
+													"nutrient_amount": {
+														"values": ["90cal"],
+														"displayName": "Amount Per Serving",
+														"displayValue": "90cal"
+													}
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Calories From Fat",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Calories From Fat"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Calories From Fat"
+													}
+												},
+												{
+													"nutrient_amount": {
+														"values": ["5cal"],
+														"displayName": "Amount Per Serving",
+														"displayValue": "5cal"
+													}
+												}
+											]
+										]
+									}
+								]
+							},
+							"key_nutrients": {
+								"displayName": "Key Nutrients",
+								"children": [
+									{
+										"displayName": "Total Fat",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Total Fat"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Total Fat"
+													}
+												},
+												{
+													"nutrient_amount": {
+														"values": ["0.5g"],
+														"displayName": "Amount Per Serving",
+														"displayValue": "0.5g"
+													}
+												}
+											]
+										],
+										"children": [
+											{
+												"displayName": "Saturated Fat",
+												"values": [
+													[
+														{
+															"nutrient_name": {
+																"values": ["Saturated Fat"],
+																"displayName": "Nutrient Name",
+																"displayValue": "Saturated Fat"
+															}
+														},
+														{
+															"nutrient_amount": {
+																"values": ["0.00000"],
+																"displayName": "Amount Per Serving",
+																"displayValue": "0.00000"
+															}
+														}
+													]
+												]
+											},
+											{
+												"displayName": "Trans Fat",
+												"values": [
+													[
+														{
+															"nutrient_name": {
+																"values": ["Trans Fat"],
+																"displayName": "Nutrient Name",
+																"displayValue": "Trans Fat"
+															}
+														},
+														{
+															"nutrient_amount": {
+																"values": ["0.00000"],
+																"displayName": "Amount Per Serving",
+																"displayValue": "0.00000"
+															}
+														}
+													]
+												]
+											}
+										]
+									},
+									{
+										"displayName": "Cholesterol",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Cholesterol"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Cholesterol"
+													}
+												},
+												{
+													"nutrient_amount": {
+														"values": ["0.00000"],
+														"displayName": "Amount Per Serving",
+														"displayValue": "0.00000"
+													}
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Sodium",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Sodium"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Sodium"
+													}
+												},
+												{
+													"nutrient_amount": {
+														"values": ["15.00000"],
+														"displayName": "Amount Per Serving",
+														"displayValue": "15.00000"
+													}
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Total Carbohydrate",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Total Carbohydrate"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Total Carbohydrate"
+													}
+												},
+												{
+													"nutrient_amount": {
+														"values": ["22g"],
+														"displayName": "Amount Per Serving",
+														"displayValue": "22g"
+													}
+												}
+											]
+										],
+										"children": [
+											{
+												"displayName": "Dietary Fiber",
+												"values": [
+													[
+														{
+															"nutrient_name": {
+																"values": ["Dietary Fiber"],
+																"displayName": "Nutrient Name",
+																"displayValue": "Dietary Fiber"
+															}
+														},
+														{
+															"nutrient_amount": {
+																"values": ["2g"],
+																"displayName": "Amount Per Serving",
+																"displayValue": "2g"
+															}
+														}
+													]
+												]
+											},
+											{
+												"displayName": "Sugars",
+												"values": [
+													[
+														{
+															"nutrient_name": {
+																"values": ["Sugars"],
+																"displayName": "Nutrient Name",
+																"displayValue": "Sugars"
+															}
+														},
+														{
+															"nutrient_amount": {
+																"values": ["15.00000"],
+																"displayName": "Amount Per Serving",
+																"displayValue": "15.00000"
+															}
+														}
+													]
+												]
+											}
+										]
+									},
+									{
+										"displayName": "Protein",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Protein"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Protein"
+													}
+												},
+												{
+													"nutrient_amount": {
+														"values": ["1g"],
+														"displayName": "Amount Per Serving",
+														"displayValue": "1g"
+													}
+												},
+												{ "nutrient_dvp": { "values": ["6%"], "displayName": "% Daily Value", "displayValue": "6%" } }
+											]
+										]
+									}
+								]
+							},
+							"vitamins_minerals": {
+								"displayName": "Vitamins and Minerals",
+								"children": [
+									{
+										"displayName": "Vitamin A",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Vitamin A"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Vitamin A"
+													}
+												},
+												{
+													"nutrient_dvp": {
+														"values": ["15.00"],
+														"displayName": "% Daily Value",
+														"displayValue": "15.00"
+													}
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Vitamin C",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Vitamin C"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Vitamin C"
+													}
+												},
+												{
+													"nutrient_dvp": {
+														"values": ["60.00"],
+														"displayName": "% Daily Value",
+														"displayValue": "60.00"
+													}
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Calcium",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Calcium"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Calcium"
+													}
+												},
+												{
+													"nutrient_dvp": {
+														"values": ["20.00"],
+														"displayName": "% Daily Value",
+														"displayValue": "20.00"
+													}
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Iron",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Iron"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Iron"
+													}
+												},
+												{
+													"nutrient_dvp": { "values": ["2.00"], "displayName": "% Daily Value", "displayValue": "2.00" }
+												}
+											]
+										]
+									},
+									{
+										"displayName": "Vitamin D",
+										"values": [
+											[
+												{
+													"nutrient_name": {
+														"values": ["Vitamin D"],
+														"displayName": "Nutrient Name",
+														"displayValue": "Vitamin D"
+													}
+												},
+												{
+													"nutrient_dvp": {
+														"values": ["25.00"],
+														"displayName": "% Daily Value",
+														"displayValue": "25.00"
+													}
+												}
+											]
+										]
+									}
+								]
+							},
+							"static_content": {
+								"displayName": "General Facts",
+								"values": [
+									[
+										{
+											"static_content": {
+												"values": [
+													"<div class='RCol'> <p>(-) Information is currently not available for this nutrient.</p> <p>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs:**</p> <p>** Percent Daily Values listed below are intended for adults and children over 4 years of age. Foods represented or purported to be for use by infants, children less than 4 years of age, pregnant women, or lactating women shall use the RDI's that are specified for the intended group provided by the FDA.</p> <table summary='Recommended Daily Allowance'> <thead> <tr> <th></th> <th>Calories:</th> <th>2,000</th> <th>2,500</th> </tr> </thead> <tbody> <tr> <td>Total Fat</td> <td>Less than</td> <td>65g</td> <td>80g</td> </tr> <tr> <td>Sat. Fat</td> <td>Less than</td> <td>20g</td> <td>25g</td> </tr> <tr> <td>Cholesterol</td> <td>Less than</td> <td>300mg</td> <td>300mg</td> </tr> <tr> <td>Sodium</td> <td>Less than</td> <td>2400mg</td> <td>2400mg</td> </tr> <tr> <td colspan='2'>Potassium</td> <td>3500mg</td> <td>3500mg</td> </tr> <tr> <td colspan='2'>Total Carbohydrate</td> <td>300g</td> <td>375g</td> </tr> <tr> <td colspan='2'>Dietary Fiber</td> <td>25g</td> <td>30g</td> </tr> </tbody> </table> <p class='CalsPerGram'>Calories per gram:</p> <p class='CalsPerGramValues'>Fat 9<span>&#8226;</span>Carbohydrate 4<span>&#8226;</span>Protein 4</p> </div>"
+												],
+												"displayName": "General Facts",
+												"displayValue": "<div class='RCol'> <p>(-) Information is currently not available for this nutrient.</p> <p>* Percent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs:**</p> <p>** Percent Daily Values listed below are intended for adults and children over 4 years of age. Foods represented or purported to be for use by infants, children less than 4 years of age, pregnant women, or lactating women shall use the RDI's that are specified for the intended group provided by the FDA.</p> <table summary='Recommended Daily Allowance'> <thead> <tr> <th></th> <th>Calories:</th> <th>2,000</th> <th>2,500</th> </tr> </thead> <tbody> <tr> <td>Total Fat</td> <td>Less than</td> <td>65g</td> <td>80g</td> </tr> <tr> <td>Sat. Fat</td> <td>Less than</td> <td>20g</td> <td>25g</td> </tr> <tr> <td>Cholesterol</td> <td>Less than</td> <td>300mg</td> <td>300mg</td> </tr> <tr> <td>Sodium</td> <td>Less than</td> <td>2400mg</td> <td>2400mg</td> </tr> <tr> <td colspan='2'>Potassium</td> <td>3500mg</td> <td>3500mg</td> </tr> <tr> <td colspan='2'>Total Carbohydrate</td> <td>300g</td> <td>375g</td> </tr> <tr> <td colspan='2'>Dietary Fiber</td> <td>25g</td> <td>30g</td> </tr> </tbody> </table> <p class='CalsPerGram'>Calories per gram:</p> <p class='CalsPerGramValues'>Fat 9<span>&#8226;</span>Carbohydrate 4<span>&#8226;</span>Protein 4</p> </div>"
+											}
+										}
+									]
+								]
+							}
+						},
+						"Warnings": {
+							"warnings": {
+								"values": [
+									"Contains: milk. Keep cap out of reach of children. If cap seal is broken or pouch looks damaged, discard. Always remember to use with adult supervision."
+								],
+								"displayName": "Warning Text",
+								"displayValue": "Contains: milk. Keep cap out of reach of children. If cap seal is broken or pouch looks damaged, discard. Always remember to use with adult supervision."
+							}
+						},
+						"MarketingDescription": {
+							"htmlContent": "%22%3Cscript%20src%3D%5C%22https%3A%2F%2Fcontent.webcollage.net%2Fapi%2Fv2%2Fproduct-content%5C%22%3E%3C%2Fscript%3E%3Cscript%3EWebcollage.loadContent(%5C%22walmart-restapi%5C%22%20%2C%20%5C%2236276784%5C%22%2C%20%7Bsource%3A%5C%22page%5C%22%7D)%3B%3C%2Fscript%3E%3Cdiv%20class%3D%5C%22wc-aplus%20wc-aplus-modular%20wc-responsive%5C%22%3E%3Cdiv%20class%3D%5C%22wc-fragment%5C%22%20data-acssite-sig%3D%5C%22R01EYVXH900K284IA%5C%22%20data-channel-product-name%3D%5C%22%5C%22%20data-compiler-v%3D%5C%222019.4.2.457%5C%22%20data-cpi%3D%5C%2236276784%5C%22%20data-gtin%3D%5C%2200023923335127%5C%22%20data-is-capdesc-open%3D%5C%22false%5C%22%20data-language-code%3D%5C%22en%5C%22%20data-min-acssite-sig%3D%5C%22R00ZPAJFE00ZBTIK5%5C%22%20data-module-brand%3D%5C%22Earth's%20Best%5C%22%20data-module-code%3D%5C%22earthsbest%5C%22%20data-module-name%3D%5C%22Earth's%20Best%5C%22%20data-mpn%3D%5C%22C33412%5C%22%20data-produced%3D%5C%222020-01-31%2002%3A25%5C%22%20data-section-caption%3D%5C%22Strawberry%20Banana%20Smoothie%20Pouches%5C%22%20data-section-tag%3D%5C%22features%5C%22%20data-section-template-code%3D%5C%22rich-features%5C%22%20data-vendor-name%3D%5C%22Strawberry%20Banana%20Smoothie%20Pouches%204ct%20pack%5C%22%20data-wcpc%3D%5C%221539100864787%5C%22%20id%3D%5C%22wc-features-973e63b9%5C%22%20style%3D%5C%22display%3Anone%5C%22%3E%3Ch2%3EStrawberry%20Banana%20Smoothie%20Pouches%3C%2Fh2%3E%3Cdiv%20class%3D%5C%22wc-aplus-body%5C%22%3E%3Cdiv%20class%3D%5C%22wc-reset%5C%22%3E%20%3Cul%20class%3D%5C%22wc-rich-features%20wc-rich-content-orientation-banner-image%20wc-first%20wc-no-line-seperator%5C%22%3E%20%3Cli%20class%3D%5C%22wc-rich-feature-item%20wc-text-placement-true%20wc-odd-0%20wc-first%20wc-has-media%20wc-thumb-large%20wc-has-no-caption%20wc-has-no-description%20wc-last%5C%22%20id%3D%5C%22wcr-rf-aslicu_wcrid1%5C%22%3E%20%3Cstyle%3E%20.wc-richfeatures-layout-computer%20ul.wc-rich-content-orientation-banner-image%20%23wcr-rf-aslicu_wcrid1%20%7B%20max-width%3A970px!important%3B%20%7D%20.wc-richfeatures-layout-computer%20ul.wc-rich-content-orientation-banner-image%20%23wcr-rf-aslicu_wcrid1%20.wc-rf-banner-image-container%20%7B%20max-width%3A970px!important%3B%20padding-bottom%3A30.927835%25!important%3B%20%7D%20.wc-richfeatures-layout-computer%20ul.wc-rich-content-orientation-banner-image%20%23wcr-rf-aslicu_wcrid1.wc-rf-box-placement-below%20.wc-rf-banner-image-container%2C%20.wc-richfeatures-layout-computer%20ul.wc-rich-content-orientation-banner-image%20%23wcr-rf-aslicu_wcrid1.wc-rf-box-location-below%20.wc-rf-banner-image-container%20%7B%20padding-bottom%3A0!important%3B%20%7D%20%3C%2Fstyle%3E%20%3Cdiv%20class%3D%5C%22wc-rf-banner-image-container%5C%22%3E%20%3Cimg%20alt%3D%5C%22%5C%22%20class%3D%5C%22wc-media%20wc-image%20wc-rf-banner-image%5C%22%20data-asset-type%3D%5C%22image%5C%22%20data-asset-url%3D%5C%22%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2Fda1fdb7a-e191-4c99-bb1f-7c7562d58fed.jpg%5C%22%20height%3D%5C%22300%5C%22%20src%3D%5C%22https%3A%2F%2Fsmedia.webcollage.net%2Frwvfp%2Fwc%2Fcp%2F1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28%2Fmodule%2Fearthsbest%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2Fda1fdb7a-e191-4c99-bb1f-7c7562d58fed.jpg.w1920.jpg%5C%22%20width%3D%5C%22970%5C%22%3E%20%3C%2Fdiv%3E%20%3C%2Fli%3E%20%3C%2Ful%3E%20%3C%2Fdiv%3E%3Cdiv%20class%3D%5C%22wc-reset%5C%22%3E%20%3Cul%20class%3D%5C%22wc-rich-features%20wc-rich-content-orientation-expanded-feature%20wc-no-line-seperator%5C%22%3E%20%3Cli%20class%3D%5C%22wc-rich-feature-item%20wc-text-placement-false%20wc-odd-0%20wc-first%20wc-has-media%20wc-thumb-medium%20wc-last%20wc-rf-col-primary%5C%22%3E%20%3Ch3%20class%3D%5C%22wc-rich-content-header%20wc-feature-main-header%20%5C%22%3EEarth's%20Best%20Organic%20Fruit%20Yogurt%20Smoothie%2C%20Strawberry%20Banana%3C%2Fh3%3E%20%3Cdiv%20class%3D%5C%22wc-media-wrap%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-media-inner-wrap%5C%22%3E%20%3Cimg%20alt%3D%5C%22%5C%22%20class%3D%5C%22wc-media%20wc-image%5C%22%20data-asset-title%3D%5C%22Earth's%20Best%20Organic%20Fruit%20Yogurt%20Smoothie%2C%20Strawberry%20Banana%5C%22%20data-asset-type%3D%5C%22image%5C%22%20data-asset-url%3D%5C%22%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2F9b06541d-b757-46ed-b497-4e957acd66f7.jpg%5C%22%20data-asset-wrapper%3D%5C%22rich-features%5C%22%20data-height%3D%5C%22480%5C%22%20data-section-template-code%3D%5C%22rich-features%5C%22%20data-width%3D%5C%22480%5C%22%20height%3D%5C%22480%5C%22%20module-id%3D%5C%22earthsbest%5C%22%20src%3D%5C%22https%3A%2F%2Fsmedia.webcollage.net%2Frwvfp%2Fwc%2Fcp%2F1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28%2Fmodule%2Fearthsbest%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2F9b06541d-b757-46ed-b497-4e957acd66f7.jpg.w480.jpg%5C%22%20title%3D%5C%22Earth's%20Best%20Organic%20Fruit%20Yogurt%20Smoothie%2C%20Strawberry%20Banana%5C%22%20wcpc%3D%5C%221539100864787%5C%22%20width%3D%5C%22480%5C%22%3E%20%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3Cdiv%20class%3D%5C%22wc-text-wrap%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-rich-content-description%5C%22%3E%20Earth's%20Best%20Organic%20Strawberry%20Banana%20Fruit%20Yogurt*%20Smoothie%20is%20an%20excellent%20source%20of%20Vitamins%20C%20%26amp%3B%20D%20for%20your%20energetic%20toddler%202%20years%20and%20older.%20Created%20with%20certified%20USDA%20organic%20ingredients%2C%20this%20smoothie%20comes%20in%20a%20convenient%20resealable%20pouch%20that's%20great%20for%20on-the-go.%3Cbr%3E%3Cbr%3E%20%3Cp%3E***Claim%20approval%20for%20USDA%20Certified-Organic%20and%20Non-GMO%20were%20given%20on%20July%2023rd%2C%202012%20from%20Quality%20Assurance%20International%20with%20certificate%20number%20C003742-NOPHTR-10%3C%2Fp%3E%20%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3C%2Fli%3E%20%3Cli%20class%3D%5C%22wc-rich-feature-item%20wc-text-placement-false%20wc-odd-0%20wc-first%20wc-has-media%20wc-thumb-medium%20wc-last%20wc-rf-col-secondary%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-text-wrap%5C%22%3E%20%3Ch3%20class%3D%5C%22wc-rich-content-header%20wc-feature-main-header%20%5C%22%3EKey%20Benefits%3A%3C%2Fh3%3E%20%3Cdiv%20class%3D%5C%22wc-rich-content-description%5C%22%3E%20%3Cul%3E%20%3Cli%3EExcellent%20source%20of%20vitamins%20C%20%26amp%3B%20D%3C%2Fli%3E%20%3Cli%3EExcellent%20source%20of%20Calcium%3C%2Fli%3E%20%3Cli%3EMade%20with%20real%20yogurt*%3C%2Fli%3E%20%3Cli%3ENo%20artificial%20flavors%20or%20colors*%3C%2Fli%3E%20%3Cli%3E*Refer%20to%20list%20of%20ingredients%3C%2Fli%3E%20%3C%2Ful%3E%20%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3C%2Fli%3E%20%3C%2Ful%3E%20%3C%2Fdiv%3E%3Cdiv%20class%3D%5C%22wc-reset%5C%22%3E%20%3Cul%20class%3D%5C%22wc-rich-features%20wc-rich-content-orientation-three-columns%20wc-last%20wc-rf-columns%20wc-no-line-seperator%5C%22%3E%20%3Cli%20class%3D%5C%22wc-rich-feature-item%20wc-text-placement-false%20wc-odd-0%20wc-first%20wc-has-media%20wc-thumb-medium%20%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-media-wrap%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-media-inner-wrap%5C%22%3E%20%3Cimg%20alt%3D%5C%22%5C%22%20class%3D%5C%22wc-media%20wc-image%5C%22%20data-asset-title%3D%5C%22Why%20Earth's%20Best%20Organic%5C%22%20data-asset-type%3D%5C%22image%5C%22%20data-asset-url%3D%5C%22%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2F0f7ad8b1-b049-4c52-bdf8-9be535605910.jpg%5C%22%20data-asset-wrapper%3D%5C%22rich-features%5C%22%20data-height%3D%5C%22300%5C%22%20data-section-template-code%3D%5C%22rich-features%5C%22%20data-width%3D%5C%22300%5C%22%20height%3D%5C%22300%5C%22%20module-id%3D%5C%22earthsbest%5C%22%20src%3D%5C%22https%3A%2F%2Fsmedia.webcollage.net%2Frwvfp%2Fwc%2Fcp%2F1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28%2Fmodule%2Fearthsbest%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2F0f7ad8b1-b049-4c52-bdf8-9be535605910.jpg.w1920.jpg%5C%22%20title%3D%5C%22Why%20Earth's%20Best%20Organic%5C%22%20wcpc%3D%5C%221539100864787%5C%22%20width%3D%5C%22300%5C%22%3E%20%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3Ch3%20class%3D%5C%22wc-rich-content-header%20wc-feature-main-header%20%5C%22%3EWhy%20Earth's%20Best%20Organic%3C%2Fh3%3E%20%3Cdiv%20class%3D%5C%22wc-rich-content-description%5C%22%3E%20For%20more%20than%2030%20years%20we%20have%20been%20dedicated%20to%20providing%20wholesome%20infant%20nutrition.%20From%20the%20beginning%20of%20our%20farming%20process%20to%20the%20moment%20when%20your%20little%20one%20tastes%20Earth's%20Best%20products%2C%20we%20ensure%20a%20high%20degree%20of%20attention%20to%20both%20ingredient%20and%20product%20quality%20and%20safety.%3Cbr%3E%3Cbr%3E%20%3Cp%3E*Claim%20approval%20for%20organic%20was%20given%20on%20September%2010th%2C%202012%20from%20Quality%20Assurance%20International%20with%20certificate%20number%20C003742-NOPHTR-10%3C%2Fp%3E%20%3C%2Fdiv%3E%20%3C%2Fli%3E%20%3Cli%20class%3D%5C%22wc-rich-feature-item%20wc-text-placement-false%20wc-even-0%20wc-has-media%20wc-thumb-medium%20%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-media-wrap%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-media-inner-wrap%5C%22%3E%20%3Cimg%20alt%3D%5C%22%5C%22%20class%3D%5C%22wc-media%20wc-image%5C%22%20data-asset-title%3D%5C%22Nutrition%20for%20Your%20Growing%20Toddler%5C%22%20data-asset-type%3D%5C%22image%5C%22%20data-asset-url%3D%5C%22%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2Fd5c7ef7f-70cf-4635-8a27-50df0f6c328b.jpg%5C%22%20data-asset-wrapper%3D%5C%22rich-features%5C%22%20data-height%3D%5C%22300%5C%22%20data-section-template-code%3D%5C%22rich-features%5C%22%20data-width%3D%5C%22300%5C%22%20height%3D%5C%22300%5C%22%20module-id%3D%5C%22earthsbest%5C%22%20src%3D%5C%22https%3A%2F%2Fsmedia.webcollage.net%2Frwvfp%2Fwc%2Fcp%2F1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28%2Fmodule%2Fearthsbest%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2Fd5c7ef7f-70cf-4635-8a27-50df0f6c328b.jpg.w1920.jpg%5C%22%20title%3D%5C%22Nutrition%20for%20Your%20Growing%20Toddler%5C%22%20wcpc%3D%5C%221539100864787%5C%22%20width%3D%5C%22300%5C%22%3E%20%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3Ch3%20class%3D%5C%22wc-rich-content-header%20wc-feature-main-header%20%5C%22%3ENutrition%20for%20Your%20Growing%20Toddler%3C%2Fh3%3E%20%3Cdiv%20class%3D%5C%22wc-rich-content-description%5C%22%3E%20Earth's%20Best%20Organic%20Fruit%20Yogurt%20Smoothies%20are%20a%20nutritious%20snack%20made%20from%20organic%20fruit%20and%20real%20organic%20yogurt.%20Specially%20formulated%20to%20meet%20the%20nutritional%20needs%20of%20toddlers%2C%20each%20smoothie%20provides%201%20full%20serving%20of%20fruit%2C%20and%20is%20an%20excellent%20source%20of%20Calcium%2C%20Vitamin%20C%20and%20Vitamin%20D.%20%3C%2Fdiv%3E%20%3C%2Fli%3E%20%3Cli%20class%3D%5C%22wc-rich-feature-item%20wc-text-placement-false%20wc-odd-0%20wc-has-media%20wc-thumb-medium%20wc-last%20%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-media-wrap%5C%22%3E%20%3Cdiv%20class%3D%5C%22wc-media-inner-wrap%5C%22%3E%20%3Cimg%20alt%3D%5C%22%5C%22%20class%3D%5C%22wc-media%20wc-image%5C%22%20data-asset-title%3D%5C%22What%20does%20Non-GMO%20and%20Organic%20mean%20for%20your%20little%20one%3F%5C%22%20data-asset-type%3D%5C%22image%5C%22%20data-asset-url%3D%5C%22%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2Fe48ed685-77a8-414a-b486-e692551dffa6.jpg%5C%22%20data-asset-wrapper%3D%5C%22rich-features%5C%22%20data-height%3D%5C%22300%5C%22%20data-section-template-code%3D%5C%22rich-features%5C%22%20data-width%3D%5C%22300%5C%22%20height%3D%5C%22300%5C%22%20module-id%3D%5C%22earthsbest%5C%22%20src%3D%5C%22https%3A%2F%2Fsmedia.webcollage.net%2Frwvfp%2Fwc%2Fcp%2F1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28%2Fmodule%2Fearthsbest%2F_cp%2Fproducts%2F1539100864787%2Ftab-d70ba7f0-01df-49fb-b22f-32945dc7a0c9%2Fe48ed685-77a8-414a-b486-e692551dffa6.jpg.w1920.jpg%5C%22%20title%3D%5C%22What%20does%20Non-GMO%20and%20Organic%20mean%20for%20your%20little%20one%3F%5C%22%20wcpc%3D%5C%221539100864787%5C%22%20width%3D%5C%22300%5C%22%3E%20%3C%2Fdiv%3E%20%3C%2Fdiv%3E%20%3Ch3%20class%3D%5C%22wc-rich-content-header%20wc-feature-main-header%20%5C%22%3EWhat%20does%20Non-GMO%20and%20Organic%20mean%20for%20your%20little%20one%3F%3C%2Fh3%3E%20%3Cdiv%20class%3D%5C%22wc-rich-content-description%5C%22%3E%20The%20long%20term%20effects%20of%20potential%20pesticide%20residues%20are%20not%20fully%20understood%2C%20but%20we%20do%20know%20that%20the%20risks%20are%20real%2C%20especially%20for%20infants%20and%20children.%20That's%20why%20Earth's%20Best%20Organic%20products%20are%20made%20with%20only%20organic%20and%20non-GMO%20ingredients%2C%20so%20you%20can%20feel%20confident%20in%20feeding%20your%20tot.%20%3C%2Fdiv%3E%20%3C%2Fli%3E%20%3C%2Ful%3E%20%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%5C%22wc-clear-both%5C%22%20style%3D%5C%22height%3A%200px%20!important%5C%22%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3EWebcollage%22",
+							"active": false
+						}
+					},
+					"displayabilityMatrix": {
+						"researchTabModuleKey": "NutritionFacts",
+						"showVideoContent": true,
+						"showMarketingContent": true
+					},
+					"videos": [
+						{
+							"poster": "https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.poster.jpg.w1920.jpg",
+							"versions": {
+								"SMALL": "https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.mobile.mp4",
+								"LARGE": "https://smedia.webcollage.net/rwvfp/wc/cp/1563810997587_8a012582-9e21-4ab5-8e3b-d78f3be66a28/module/earthsbest/_cp/products/1539100864787/tab-48944ef9-0285-4ebc-b2cf-03c18c23b7e4/fdc71b96-3bbf-4dd9-80bc-9d750642456a.mp4.mp4full.mp4"
+							}
+						}
+					]
+				}
+			},
+			"idmlModal": { "show": false },
+			"interactiveContent": { "active": false, "title": "", "htmlContent": "" },
+			"itemBadge": {},
+			"itemPOVS": {},
+			"longLeadTime": false,
+			"midasContext": {
+				"pageType": "item",
+				"subType": "",
+				"productId": "7CD19RPTO088",
+				"itemId": "36276784",
+				"price": 8.85,
+				"preorder": false,
+				"online": true,
+				"freeShipping": false,
+				"inStore": false,
+				"query": "(6 Pouches) Earth's Best Organic Sesame Street Toddler Fruit Yogurt Smoothie, Strawberry Banana, 4.2 oz. Pouch",
+				"brand": "Earth's Best",
+				"categoryPathId": "0:5427:133283:1001448:1224824:1224826",
+				"categoryPathName": "Home Page/Baby/Feeding/Baby Food/Baby Food Stages/Baby Food Stage 2",
+				"manufacturer": "The Hain Celestial Group",
+				"verticalId": "standard",
+				"verticalTheme": "standard",
+				"smode": 0,
+				"isTwoDayDeliveryTextEnabled": true,
+				"zip": "94066"
+			},
+			"oosView": false,
+
+			"postQuestion": {},
+			"preferredStoreId": "",
+			"premiumBrandBanner": {},
+			"promotionalMessage": {},
+			"questionAnswers": {},
+			"relevantReviews": {},
+			"reviews": {
+				"showMediaModal": false,
+				"selectedReviewMediaId": "",
+				"heroMedia": {},
+				"frequentMentions": {},
+				"7CD19RPTO088": {
+					"averageOverallRating": 4.625,
+					"roundedAverageOverallRating": 4.6,
+					"overallRatingRange": 5,
+					"totalReviewCount": 8,
+					"recommendedPercentage": 62,
+					"ratingValueOneCount": 0,
+					"ratingValueTwoCount": 0,
+					"ratingValueThreeCount": 1,
+					"ratingValueFourCount": 1,
+					"ratingValueFiveCount": 6,
+					"percentageOneCount": 0,
+					"percentageTwoCount": 0,
+					"percentageThreeCount": 12,
+					"percentageFourCount": 12,
+					"percentageFiveCount": 75,
+					"activeSort": "relevancy",
+					"pagination": {
+						"total": 8,
+						"pages": [{ "num": 1, "gap": false, "active": true, "url": "sort=relevancy&page=1" }],
+						"currentSpan": "1-8"
+					},
+					"customerReviews": [
+						{
+							"reviewId": "113976541",
+							"authorId": "c12f1285cfad55f6e6bb7a5e5c7385cc",
+							"recommended": true,
+							"showRecommended": true,
+							"negativeFeedback": 0,
+							"positiveFeedback": 0,
+							"rating": 5,
+							"reviewTitle": "Great price and product",
+							"reviewText": "My kids love these, and there is no added sugar, just the fruit and yogurt.  Price is much better than my local grocery store.",
+							"reviewSubmissionTime": "12/5/2016",
+							"userNickname": "JenD",
+							"badges": [{ "badgeType": "Custom", "id": "VerifiedPurchaser", "contentType": "REVIEW" }],
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						},
+						{
+							"reviewId": "221363877",
+							"authorId": "133bf8439fb06a63d8195e2c17785445",
+							"recommended": false,
+							"showRecommended": false,
+							"negativeFeedback": 0,
+							"positiveFeedback": 0,
+							"rating": 5,
+							"reviewText": "Great for school as a healthy snack. My son loves these.",
+							"reviewSubmissionTime": "10/8/2019",
+							"userNickname": "Aska111111",
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						},
+						{
+							"reviewId": "212863084",
+							"authorId": "02342c68c241ab8eaf1cc67c8f6e435e",
+							"recommended": false,
+							"showRecommended": false,
+							"negativeFeedback": 0,
+							"positiveFeedback": 0,
+							"rating": 5,
+							"reviewTitle": "Good Good",
+							"reviewText": "Earths Best is by far my favorite Organic Brand for my child. From food to diapers and wipes. II love the fruit smoothies for by son and he loves them too. They are a good snack to keep in the diaper bag when you're on the go! All of the flavors are good but his favorite is the apple blueberry.",
+							"reviewSubmissionTime": "1/12/2019",
+							"userNickname": "J2TheAmy",
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						},
+						{
+							"reviewId": "86611948",
+							"authorId": "bd8370602fb00151185660df2bc5e030",
+							"recommended": true,
+							"showRecommended": true,
+							"negativeFeedback": 0,
+							"positiveFeedback": 0,
+							"rating": 5,
+							"reviewTitle": "Convenient and yummy???",
+							"reviewText": "Don't know how it tastes I don't eat these but my son likes it a lot. Wish it will be sold in cases at a better discount. My son goes through 3 pouches a day.",
+							"reviewSubmissionTime": "4/26/2016",
+							"userNickname": "Peggysue",
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						},
+						{
+							"reviewId": "83592646",
+							"authorId": "823d909b7c3c026b1f0a8aad23c54453",
+							"recommended": true,
+							"showRecommended": true,
+							"negativeFeedback": 0,
+							"positiveFeedback": 0,
+							"rating": 5,
+							"reviewTitle": "kids love it",
+							"reviewText": "Kids love it",
+							"reviewSubmissionTime": "3/20/2016",
+							"userNickname": "papa1ville",
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						},
+						{
+							"reviewId": "94667190",
+							"authorId": "3dda525c2655cefd236abec50ab6ac1f",
+							"recommended": true,
+							"showRecommended": true,
+							"negativeFeedback": 0,
+							"positiveFeedback": 0,
+							"rating": 4,
+							"reviewTitle": "Good",
+							"reviewText": "Good",
+							"reviewSubmissionTime": "7/21/2016",
+							"userNickname": "Jayleen",
+							"badges": [{ "badgeType": "Custom", "id": "VerifiedPurchaser", "contentType": "REVIEW" }],
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						},
+						{
+							"reviewId": "30271015",
+							"authorId": "415b39fa553be712993bb2f623a2f2a9",
+							"recommended": true,
+							"showRecommended": true,
+							"negativeFeedback": 1,
+							"positiveFeedback": 2,
+							"rating": 3,
+							"reviewTitle": "Okay Value for flavor",
+							"reviewText": "These product and flavor are stocked and priced better at Ralph's supermarket.",
+							"reviewSubmissionTime": "6/7/2014",
+							"userNickname": "HappyMomSD101",
+							"badges": [{ "badgeType": "Custom", "id": "VerifiedPurchaser", "contentType": "REVIEW" }],
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						},
+						{
+							"reviewId": "217871862",
+							"authorId": "b09b51a51d26f2d397992020ef4f37b3",
+							"recommended": false,
+							"showRecommended": false,
+							"negativeFeedback": 0,
+							"positiveFeedback": 0,
+							"rating": 5,
+							"reviewSubmissionTime": "6/3/2019",
+							"userNickname": "momof2",
+							"userAttributes": {},
+							"photos": [],
+							"videos": []
+						}
+					],
+					"topPositiveReview": {
+						"reviewId": "113976541",
+						"authorId": "c12f1285cfad55f6e6bb7a5e5c7385cc",
+						"recommended": true,
+						"showRecommended": true,
+						"negativeFeedback": 0,
+						"positiveFeedback": 0,
+						"rating": 5,
+						"reviewTitle": "Great price and product",
+						"reviewText": "My kids love these, and there is no added sugar, just the fruit and yogurt.  Price is much better than my local grocery store.",
+						"reviewSubmissionTime": "12/5/2016",
+						"userNickname": "JenD",
+						"badges": [{ "badgeType": "Custom", "id": "VerifiedPurchaser", "contentType": "REVIEW" }],
+						"userAttributes": {},
+						"photos": [],
+						"videos": []
+					},
+					"lookupId": "7CD19RPTO088",
+					"aspects": [
+						{ "id": 9636, "score": 100, "name": "Snack", "snippetCount": 2 },
+						{ "id": 56, "score": 100, "name": "Taste", "snippetCount": 1 },
+						{ "id": 48, "score": 100, "name": "Price", "snippetCount": 1 }
+					]
+				}
+			},
+			"thankYouModal": {},
+			"updateComponent": {},
+			"verticalAttributes": { "id": "standard", "theme": "standard" },
+			"videoDialog": { "showVideoDialog": false },
+			"zoomDialog": { "active": false, "zoomableImages": [], "selectedImageIndex": 0 },
+			"buyBox": {
+				"primaryProductId": "7CD19RPTO088",
+				"primaryUsItemId": "36276784",
+				"prices": [],
+				"states": [{ "action": "AVAILABLE", "product": 0 }],
+				"criteria": [],
+				"images": [],
+				"products": [
+					{
+						"isDigitalVariant": false,
+						"isAudioBookVariant": false,
+						"showBuyNowButton": false,
+						"showFreeTrialButton": false,
+						"isKeySpecFeatureEnabled": false,
+						"isReduceOtherSellersEnabled": false,
+						"brandName": "Earth's Best",
+						"otherInfoLabel": "Model",
+						"otherInfoValue": "C33312N",
+						"analyticsType": "Brand Link",
+						"productId": "7CD19RPTO088",
+						"usItemId": "36276784",
+						"upc": "023923332126",
+						"fetched": true,
+						"images": [
+							{
+								"id": "5D25F5D8DCE64F59BA4E5CADE2E7D209",
+								"url": "https://i5.walmartimages.com/asr/aa18ce64-3038-4057-8d05-57c6afd8f602_1.059efa829849b1aad074605a4c18be82.jpeg",
+								"zoomable": true
+							},
+							{
+								"id": "76E9EA535ACA4A7593265B7E1EFB0DF2",
+								"url": "https://i5.walmartimages.com/asr/2a4de017-6988-45e8-97c5-c6d49b28d359_1.dd83948bd4246fddbfb92c3595a96c5f.jpeg",
+								"zoomable": true
+							},
+							{
+								"id": "831A39F9B2E94066A24B655D8C85A517",
+								"url": "https://i5.walmartimages.com/asr/1c33c1e3-c077-4a0a-9299-841231fa2d50_1.fe0dc21c55b4b4abab924eee1aa6216c.jpeg",
+								"zoomable": true
+							}
+						],
+						"variants": [],
+						"productName": "(6 Pouches) Earth's Best Organic Sesame Street Toddler Fruit Yogurt Smoothie, Strawberry Banana, 4.2 oz. Pouch",
+						"categoryPathId": "0:5427:133283:1001448:1224824:1224826",
+						"personalizationData": {},
+						"inflexibleKitGroupComponents": null,
+						"path": [
+							{ "name": "Baby", "url": "/cp/5427" },
+							{ "name": "Feeding", "url": "/cp/133283" },
+							{ "name": "Baby Food", "url": "/cp/1001448" },
+							{ "name": "Baby Food Stages", "url": "/cp/1224824" },
+							{ "name": "Baby Food Stage 2", "url": "/cp/1224826" }
+						],
+						"categoryPath": "Home Page/Baby/Feeding/Baby Food/Baby Food Stages/Baby Food Stage 2",
+						"rhPath": "40000:41000:41001:41102:41210",
+						"primaryShelfId": "1224826",
+						"geoItemClassification": "LOCAL_GEO",
+						"shortDescription": "<ul><li>USDA Organic Certified</li><li>Wholesome non-GMO ingredients</li><li>Certified Kosher Dairy ingredients</li></ul>",
+						"productHighlightedAttributes": [],
+						"salesRank": {},
+						"walmartItemNumber": "552619626",
+						"classId": "1",
+						"ironbankCategory": "Baby Food",
+						"offerId": "ACBE618321AE4B20ACDF5C178DE3FE88",
+						"offerType": "ONLINE_AND_STORE",
+						"offers": [],
+						"offerCount": 1,
+						"isOnline": true,
+						"shippingOptions": [
+							{
+								"fulfillmentPrice": { "price": 5.99, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+								"fulfillmentPriceType": "ORDER",
+								"shipMethod": "EXPEDITED"
+							}
+						],
+						"highlightedShippingOption": {
+							"index": 0,
+							"title": "shipping_title_two_day_threshold",
+							"titlePrice": { "price": 35, "currencyUnit": "USD", "currencyUnitSymbol": "$" }
+						},
+						"shippingOptionIndex": 0,
+						"freeShippingThresholdPrice": { "price": 35, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+						"nextDayShippingOptionIndex": -1,
+						"shippable": true,
+						"hasShippingRestrictions": false,
+						"locationSurcharge": false,
+						"upsellShippingOptionIndex": -1,
+						"upsellFulfillmentOption": {
+							"upsellable": true,
+							"shippingPrice": { "price": 5.99, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+							"shipMethod": "EXPEDITED",
+							"arrivalDate": 1582747200000,
+							"displayArrivalDate": "Wednesday, Feb 26",
+							"skyLineAdEnabled": true,
+							"displayUpsellForAllCategoriesEnabled": true,
+							"highlightedDeliveryDate": true,
+							"title": "shipping_title_two_day_threshold",
+							"titlePrice": { "price": 35, "currencyUnit": "USD", "currencyUnitSymbol": "$" }
+						},
+						"shippingOptionToDisplay": {
+							"fulfillmentPrice": { "price": 5.99, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+							"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+							"fulfillmentPriceType": "ORDER",
+							"shipMethod": "EXPEDITED"
+						},
+						"shippingTitleToDisplay": "shipping_title_two_day_threshold",
+						"isEDeliveryItem": false,
+						"nextDayShippingOptionToDisplay": "",
+						"nextDayShippingTitleToDisplay": "",
+						"nextDayFreeShippingThresholdPrice": {},
+						"isBelowShippingThreshold": true,
+						"twoDayShippingEligible": true,
+						"nextDayEligible": false,
+						"hasFreightShipping": false,
+						"shippingPrice": 5.99,
+						"surchargeType": "",
+						"promotionsData": {
+							"isItemAccessEnabled": true,
+							"isConsumable": false,
+							"brand": "Earth's Best",
+							"productSegment": "Baby",
+							"productType": "Baby Foods",
+							"charPrimaryCategoryPath": "Home Page/Baby/Feeding/Baby Food/Baby Food Stages/Baby Food Stage 2",
+							"priceDisplayCodes": { "eligibleForAssociateDiscount": true },
+							"productClassType": "REGULAR",
+							"rhPath": "40000:41000:41001:41102:41210",
+							"itemClassId": "1",
+							"isAlcohol": false,
+							"isWarp": false,
+							"isPreorder": false,
+							"manufacturer": "The Hain Celestial Group",
+							"subscriptionInterval": ""
+						},
+						"shipAsIs": false,
+						"classType": "REGULAR",
+						"priceMap": {
+							"currencyUnitSymbol": "$",
+							"unitPriceDisplayValue": "$0.35 / oz",
+							"price": 8.85,
+							"submapType": "",
+							"wasPrice": 10.68,
+							"unitPrice": 0.351,
+							"unitOfMeasure": "oz"
+						},
+						"priceFlagsList": [],
+						"pickupable": true,
+						"pickupOptions": [
+							{
+								"fulfillmentPrice": { "price": 0, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+								"storeId": 2648,
+								"storeName": "San Leandro Store",
+								"storeAddress": "1919 Davis St",
+								"storeStateOrProvinceCode": "CA",
+								"storePostalCode": "94577",
+								"availability": "AVAILABLE",
+								"pickupMethod": "SHIP_TO_STORE",
+								"storeCity": "San Leandro",
+								"productLocation": {},
+								"inStoreStockStatus": "Out of stock",
+								"inStorePackagePrice": { "price": 8.28, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"storeTimeZone": "PST",
+								"storePhone": "510-569-0200"
+							},
+							{
+								"fulfillmentPrice": { "price": 0, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+								"storeId": 5434,
+								"storeName": "San Leandro Store",
+								"storeAddress": "15555 Hesperian Blvd",
+								"storeStateOrProvinceCode": "CA",
+								"storePostalCode": "94579",
+								"availability": "AVAILABLE",
+								"pickupMethod": "SHIP_TO_STORE",
+								"storeCity": "San Leandro",
+								"productLocation": {},
+								"inStoreStockStatus": "Out of stock",
+								"inStorePackagePrice": { "price": 8.28, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"storeTimeZone": "PST",
+								"storePhone": "510-351-0108"
+							},
+							{
+								"fulfillmentPrice": { "price": 0, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+								"storeId": 2031,
+								"storeName": "Union City Store",
+								"storeAddress": "30600 Dyer St",
+								"storeStateOrProvinceCode": "CA",
+								"storePostalCode": "94587",
+								"availability": "AVAILABLE",
+								"pickupMethod": "SHIP_TO_STORE",
+								"storeCity": "Union City",
+								"productLocation": {},
+								"inStoreStockStatus": "Out of stock",
+								"inStorePackagePrice": { "price": 8.28, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"tireInstallationService": { "accOnlineScheduling": false, "phone": "510-475-5836" },
+								"storeTimeZone": "PST",
+								"storePhone": "510-475-5915"
+							},
+							{
+								"fulfillmentPrice": { "price": 0, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+								"storeId": 2280,
+								"storeName": "Mountain View Store",
+								"storeAddress": "600 Showers Dr",
+								"storeStateOrProvinceCode": "CA",
+								"storePostalCode": "94040",
+								"availability": "AVAILABLE",
+								"pickupMethod": "SHIP_TO_STORE",
+								"storeCity": "Mountain View",
+								"productLocation": {},
+								"inStoreStockStatus": "Out of stock",
+								"inStorePackagePrice": { "price": 8.28, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"storeTimeZone": "PST",
+								"storePhone": "650-917-0796"
+							},
+							{
+								"fulfillmentPrice": { "price": 0, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+								"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+								"storeId": 5426,
+								"storeName": "Fremont Store",
+								"storeAddress": "40580 Albrae St",
+								"storeStateOrProvinceCode": "CA",
+								"storePostalCode": "94538",
+								"availability": "AVAILABLE",
+								"pickupMethod": "SHIP_TO_STORE",
+								"storeCity": "Fremont",
+								"productLocation": {},
+								"inStoreStockStatus": "Out of stock",
+								"storeTimeZone": "PST",
+								"storePhone": "510-440-8060"
+							}
+						],
+						"pickupOptionToDisplay": {
+							"fulfillmentPrice": { "price": 0, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+							"fulfillmentDateRange": { "exactDeliveryDate": 1582747200000 },
+							"storeId": 2648,
+							"storeName": "San Leandro Store",
+							"storeAddress": "1919 Davis St",
+							"storeStateOrProvinceCode": "CA",
+							"storePostalCode": "94577",
+							"availability": "AVAILABLE",
+							"pickupMethod": "SHIP_TO_STORE",
+							"storeCity": "San Leandro",
+							"productLocation": {},
+							"inStoreStockStatus": "Out of stock",
+							"inStorePackagePrice": { "price": 8.28, "currencyUnit": "USD", "currencyUnitSymbol": "$" },
+							"storeTimeZone": "PST",
+							"storePhone": "510-569-0200"
+						},
+						"highlightedPickupOption": 0,
+						"pickupDiscountEligible": false,
+						"pickupTodayEligible": false,
+						"pickupMethod": "SHIP_TO_STORE",
+						"availabilityStatus": "IN_STOCK",
+						"globalProductAvailability": "",
+						"urgentQuantity": null,
+						"orderPreselectedQuantity": 1,
+						"minQuantity": 1,
+						"maxQuantity": 12,
+						"storeIds": [2648, 5434, 2031, 2280, 5426],
+						"sellerId": "F55CDC31AB754BB68FE0B39041159D63",
+						"catalogSellerId": "0",
+						"sellerDisplayName": "Walmart.com",
+						"showSoldBy": false,
+						"isEGiftCard": false,
+						"isTiresItem": false,
+						"isFsaEligible": false,
+						"flexibleSpendingAccountEligible": null,
+						"removeATC": false,
+						"reviewsCount": 8,
+						"averageRating": 4.6,
+						"premiumDeliveryOptions": [],
+						"manufactureNumber": "C33312N",
+						"productTypeId": "1309",
+						"manufacturer": "The Hain Celestial Group",
+						"canonicalUrl": "/ip/6-Pouches-Earth-s-Best-Organic-Sesame-Street-Toddler-Fruit-Yogurt-Smoothie-Strawberry-Banana-4-2-oz-Pouch/36276784",
+						"skuId": "C33312N",
+						"blitzDayStartTime": null,
+						"blitzItem": false,
+						"blitzStoreMsg": null,
+						"blitzDayStartMsg": null,
+						"productType": "Baby Foods",
+						"productDietaryAttributes": [
+							{
+								"key": "nutritional_claim",
+								"values": [
+									"Excellent Source of Calcium",
+									"Excellent Source of Vitamin C",
+									"Low Fat",
+									"Low Cholesterol",
+									"Healthy",
+									"Saturated Fat Free",
+									"Excellent Source of Protein",
+									"Excellent Source OF Vitamin D",
+									"Very Low Sodium",
+									"Trans Fat Free",
+									"Good Source of Fiber"
+								]
+							},
+							{ "key": "dietary_method", "values": ["Kosher", "Atkins"] },
+							{ "key": "allergens_not_contained", "values": ["Artificial Color Free", "Artificial Flavor Free"] },
+							{ "key": "organic_certifications", "values": ["Organic Certified"] }
+						],
+						"specificationHighlights": {},
+						"model": "C33312N",
+						"homeServiceType": ""
+					}
+				],
+				"verticalId": "standard",
+				"verticalTheme": "standard",
+				"walledGarden": false,
+				"athenaCategoryPathId": "0:5427:133283:1001448:1224824:1224826",
+				"athenaPrimaryShelfId": "1224826",
+				"athenaOfferType": "ONLINE_AND_STORE",
+				"athenaAvailabilityStatus": "IN_STOCK"
+			},
+			"appState": { "action": "AVAILABLE", "product": 0 },
+			"addToCart": { "actionStatus": "CTA_INITIALIZED", "addToCartError": {} },
+			"imagesState": 0,
+			"selectedAddOnServices": []
+		},
+		"showTrustModal": false,
+		"fulfillmentOptions": {
+			"type": "SHIPPING",
+			"showContainer": false,
+			"status": "FETCHED",
+			"didInvalidate": false,
+			"locationErrorMessage": "",
+			"loaded": false
+		},
+		"feedback": { "showFeedbackContainer": false },
+		"fdaCompliance": {},
+		"addToRegistry": {},
+		"addToList": {},
+		"wpaMap": {
+			"loading": true,
+			"midasConfig": {},
+			"midasContext": {},
+			"result": {
+				"adModules": [
+					{
+						"title": "Sponsored Products",
+						"products": [
+							{
+								"id": {
+									"usItemId": "50422899",
+									"productId": "0YV21XB98GVD",
+									"offerId": "DF89309AED234EAB80EB6ADF4D72FD25",
+									"usSellerId": "0"
+								},
+								"price": {
+									"fromPrice": null,
+									"minPrice": 7.47,
+									"maxPrice": 13.44,
+									"currentPrice": null,
+									"comparisonPrice": null,
+									"comparisonMinPrice": null,
+									"comparisonMaxPrice": null,
+									"isStrikeThrough": false,
+									"submapType": null
+								},
+								"ratings": { "rating": "4.6", "totalRatings": "34" },
+								"flags": { "isClearance": false, "isRollback": false, "isSpecialBuy": false, "isReducedPrice": false },
+								"imageSrc": "https://i5.walmartimages.com/asr/a0115b6a-c4d4-45b4-9b02-500cc1cbce92_1.e902d4227a3afd7818d78e7f1aac19a9.jpeg",
+								"productType": "VARIANT",
+								"bundleType": "",
+								"canAddToCart": true,
+								"productUrl": "//wrd.walmart.com/track?rd=https%3A%2F%2Fwww.walmart.com%2Fip%2F4-Canisters-Gerber-Puffs-Banana-Strawberry-Apple-Cereal-Snack-Variety-Pack-1-48-oz%2F50422899%3FfindingMethod%3Dwpa%26requestUUID%3D48a39e81-eef2-462e-9bca-dbb0572da938%26tgtp%3D1%26cmp%3D244169%26relRank%3D6%26tax%3D5427_133283_1001448_1224824_1224826%26pt%3Dip%26adgrp%3D247365%26bt%3D1%26plmt%3D__plmt__%26wpa_qs%3DAH5A0dKchKmTI8iZ_M66FEj6TFO2U4HFb1yP7sG3PVTscDNvtIsnzXUzrs4MMc8lqLGUMC26haDZ5C-U8ATEl_68LgS36eoE3HBS1gtNfWODB1-qO9C1t3GhcFh8HPmK%26bkt%3D265%26tn%3DWMT%26mLoc%3Dtop%26pgid%3D36276784%26isSlr%3Dfalse%26itemId%3D50422899%26relUUID%3D48a39e81-eef2-462e-9bca-dbb0572da938%26adUid%3D92bd3250-a9ce-4ed2-8254-7b22fdd1c256%26adpgm%3Dwpa%26pltfm%3Ddesktop&rdf=1&requestUUID=48a39e81-eef2-462e-9bca-dbb0572da938&tgtp=1&cmp=244169&relRank=6&tax=5427_133283_1001448_1224824_1224826&pt=ip&adgrp=247365&bt=1&plmt=__plmt__&wpa_qs=AH5A0dKchKmTI8iZ_M66FEj6TFO2U4HFb1yP7sG3PVTscDNvtIsnzXUzrs4MMc8lqLGUMC26haDZ5C-U8ATEl_68LgS36eoE3HBS1gtNfWODB1-qO9C1t3GhcFh8HPmK&bkt=265&tn=WMT&mLoc=top&pgid=36276784&isSlr=false&itemId=50422899&relUUID=48a39e81-eef2-462e-9bca-dbb0572da938&adUid=92bd3250-a9ce-4ed2-8254-7b22fdd1c256&adpgm=wpa&pltfm=desktop&ver=1",
+								"brand": "Gerber",
+								"isTwoDayShippingEligible": true,
+								"isNextDayEligible": true,
+								"geoItemClassification": "LOCAL_GEO",
+								"productName": "(4 Canisters) Gerber Puffs Banana/Strawberry Apple Cereal Snack Variety Pack, 1.48 oz.",
+								"quantity": 1105,
+								"availabilityStatus": "AVAILABLE",
+								"midasData": {
+									"impBeacon": "",
+									"clickBeacon": "",
+									"campaignId": "244169",
+									"adGroupId": "247365",
+									"sellerId": null,
+									"pangaeaSellerId": null,
+									"isSellerCampaign": false,
+									"sellerName": "Walmart.com",
+									"relRank": "6",
+									"details": "",
+									"adType": "wpa",
+									"wpaQs": "AH5A0dKchKmTI8iZ_M66FEj6TFO2U4HFb1yP7sG3PVTscDNvtIsnzXUzrs4MMc8lqLGUMC26haDZ5C-U8ATEl_68LgS36eoE3HBS1gtNfWODB1-qO9C1t3GhcFh8HPmK"
+								}
+							}
+						],
+						"midasModuleData": {
+							"adModule": "wpa",
+							"pageBeacon": "https://b.hlserve.com/beacon?hl_qs=2r8smq7e94fAGpc%2fmPimtN9wD3d6hPBxuCteCWL8jjZNv1GHr9RRPVHvy80ukXSJK8%2fLq4nW7MpJlD9U6oDXQQupDLUe7IV7emv0quBsGY0UKECBVpeVxsyr9Y7HC0iZWCHSorEIWMVhEEDVC13ySIPxXkLkVZyZOcg8lYDtkcQBX4fGC7hu8W%2fT0yP5cPaTpAQdoDe6WL7hV%2bzjV3gfzA%3d%3d&prodid=36276784&hlpt=P&fid=96&ev=1&customer_id=__customer_id__&tax=5427_133283_1001448_1224824_1224826&ic_strat=0&creative=__creative__&searchterms=%286+Pouches%29+Earth%27s+Best+Organic+Sesame+Street+Toddler+Fruit+Yogurt+Smoothie%2C+Strawberry+Banana%2C+4.2+oz.+Pouch&pid=__pid__&adsDisplayed=all&noauction=1&c=G&cuserid=&platform=__pfm__&action=page&puserid=__puserid__",
+							"pageBeacons": {
+								"hl": "https://b.hlserve.com/beacon?hl_qs=2r8smq7e94fAGpc%2fmPimtN9wD3d6hPBxuCteCWL8jjZNv1GHr9RRPVHvy80ukXSJK8%2fLq4nW7MpJlD9U6oDXQQupDLUe7IV7emv0quBsGY0UKECBVpeVxsyr9Y7HC0iZWCHSorEIWMVhEEDVC13ySIPxXkLkVZyZOcg8lYDtkcQBX4fGC7hu8W%2fT0yP5cPaTpAQdoDe6WL7hV%2bzjV3gfzA%3d%3d&prodid=36276784&hlpt=P&fid=96&ev=1&customer_id=__customer_id__&tax=5427_133283_1001448_1224824_1224826&ic_strat=0&creative=__creative__&searchterms=%286+Pouches%29+Earth%27s+Best+Organic+Sesame+Street+Toddler+Fruit+Yogurt+Smoothie%2C+Strawberry+Banana%2C+4.2+oz.+Pouch&pid=__pid__&adsDisplayed=all&noauction=1&c=G&cuserid=&platform=__pfm__&action=page&puserid=__puserid__"
+							},
+							"pageId": "36276784",
+							"pageType": "item",
+							"bucketId": "265",
+							"details": "",
+							"modulePosition": null,
+							"uuid": "48a39e81-eef2-462e-9bca-dbb0572da938",
+							"featuredImage": null,
+							"featuredImageName": null,
+							"featuredUrl": null,
+							"featuredHeadline": null,
+							"logoClickTrackUrl": null,
+							"traceId": null,
+							"unavailableItems": null,
+							"unpublishedItems": null
+						}
+					}
+				],
+				"details": ""
+			}
+		},
+		"btvMap": {
+			"btvPlacementBeaconAction": {},
+			"terra": {
+				"variantCategoriesMap": {},
+				"products": {},
+				"offers": {},
+				"images": {},
+				"sellers": {},
+				"buyTogetherValue": {}
+			},
+			"selection": null,
+			"ui": {
+				"hidden": true,
+				"anchor": { "selectedVariants": [] },
+				"accessories": [],
+				"offers": {
+					"badges": [],
+					"ageRestriction": null,
+					"legalRatingType": null,
+					"legalRatingValue": null,
+					"totalPrice": 0,
+					"totalSavings": 0,
+					"selectedOffers": [],
+					"hasSavings": false,
+					"shippingPassEligible": false,
+					"twoDayShippingEligible": false
+				},
+				"seller": { "catalogSellerId": 0, "sellerDisplayName": "", "sellerId": 0, "sellerType": "" }
+			}
+		},
+		"postQuestion": {},
+		"getPromoStatus": {},
+		"lastAction": ["@@redux/INIT", "RECEIVE_PRODUCT_DATA", "RECEIVE_WPA", "FETCH_NEXT_DAY"],
+		"nextDay": {
+			"status": "ND_ELIGIBLE",
+			"cutoffTime": 1582584300,
+			"eligible": true,
+			"tempUnavailable": false,
+			"targetDate": 1582632000,
+			"pageId": "product",
+			"fulfillmentLabel": "core"
+		},
+		"easyReorder": { "quantitiesInCart": {} },
+		"location": {
+			"location": {
+				"postalCode": "94066",
+				"city": "San Bruno",
+				"state": "CA",
+				"country": "USA",
+				"type": "default_zip",
+				"isZipLocated": false,
+				"nextDay": {
+					"cutoffTime": 1582584300,
+					"eligible": true,
+					"tempUnavailable": false,
+					"targetDate": 1582632000,
+					"status": "ND_ELIGIBLE",
+					"pageId": "product",
+					"fulfillmentLabel": "core"
+				},
+				"stores": [
+					{ "storeId": "2648", "types": [] },
+					{ "storeId": "5434", "types": [] },
+					{ "storeId": "2031", "types": [] },
+					{ "storeId": "2280", "types": [] },
+					{ "storeId": "5426", "types": [] }
+				]
+			}
+		},
+		"isAjaxCall": false,
+		"accessModeEnabled": true,
+		"productQuimbyData": { "fetchBTV": false },
+		"cartData": {},
+		"productComparison": { "ui": { "tooltipMessage": null }, "products": { "list": [], "map": {} } },
+		"isCachable": false
+	}
+}
