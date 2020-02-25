@@ -1,12 +1,14 @@
-// const cheerio = require("cheerio");
 // const axios = require("axios");
 // const proxy = {}
+const console = require("./console");
 const axios = require("axios-https-proxy-fix");
 const proxy = {
 	host: "172.16.2.30",
 	port: 8080
 };
-const spinner = require("./index").spinner;
+const ui = require("clui");
+
+const spinner = new ui.Spinner("Executing commands...");
 
 const cleanUrl = (url, baseUrl) => {
 	if (url[0] == "/")
@@ -60,4 +62,4 @@ const cheerioAsyncEach = async (cheerioElement, fn) => {
 	return cheerioElement;
 };
 
-module.exports = { cleanUrl, fetchData, printProgress, asyncForEach, cheerioAsyncEach };
+module.exports = { cleanUrl, fetchData, printProgress, asyncForEach, cheerioAsyncEach, spinner };

@@ -1,5 +1,6 @@
 const cheerio = require("cheerio");
 
+const console = require("../console");
 const config = require("../config");
 const helper = require("../helper");
 const queries = require("../mongodb/queries");

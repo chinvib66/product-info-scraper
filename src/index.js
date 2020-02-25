@@ -1,83 +1,178 @@
-var inquirer = require("inquirer");
-const ui = require("clui");
-// const stdin = process.stdin;
-// stdin.setEncoding("UTF-8");
-// stdin.on("data", key => {
-// 	if (key.indexOf("stop") == 0) {
-// 		process.abort();
-// 	}
-// });
+const inquirer = require("inquirer");
+const editJsonFile = require("edit-json-file");
+
 const config = require("./config");
+const helper = require("./helper");
+const console = require("./console");
 const connectDb = require("./mongodb/connection");
 
-const spinner = new ui.Spinner("Executing commands...");
+const spinner = require("./helper").spinner;
 
-console.log("Launching Scraper...");
-connectDb().then(() => {
-	console.log("MongoDb connected");
-	cli();
-});
-const cli = () => {
+const edit = () => {
+	console.log("\n Editing Config File\n");
+	let file = editJsonFile(`${__dirname}/config.json`, { autosave: true });
+	console.log(file.toObject());
+	inquirer
+		.prompt({ type: "list", name: "task", message: "Select Action", choices: ["Set", "Delete", "Go Back"] })
+		.then(ans => {
+			ans.task === "Set"
+				? inquirer
+						.prompt({
+							type: "input",
+							name: "set",
+							message: "Type changes in format specified. (Refer Documentation) \n"
+						})
+						.then(ans => {
+							let key = ans.set.split(":")[0],
+								val = ans.set.split(":")[1];
+							try {
+								let v = JSON.parse(val);
+								val = v;
+							} catch (error) {}
+							file.set(key, val);
+						})
+						.then(() => edit())
+						.catch(err => console.log(err))
+				: ans.task === "Delete"
+				? inquirer
+						.prompt({
+							type: "input",
+							name: "delete",
+							message: "Type changes in format specified. (Refer Documentation) \n"
+						})
+						.then(ans => {
+							let key = ans.delete;
+							file.unset(key);
+						})
+						.then(() => edit())
+						.catch(err => console.log(err))
+				: tasks();
+		});
+};
+
+const tasks = () => {
 	console.log("\n");
-	// inquirer
-	// 	.prompt({
-	// 		type: "input",
-	// 		name: "action",
-	// 		message: "Type 'start' to proceed towards scraping \n  Type 'exit' to close the cli and exit \n "
-	// 	})
-	// 	.then(ans => (ans.action === "start" ? scraping() : ans.action.trim() === "exit" ? process.exit() : cli()));
-	scraping();
-	process.on("SIGINT", function() {
-		console.log("\nGracefully shutting down from SIGINT (Ctrl+C)");
-		console.log("Stopping Processes");
-		spinner.stop();
-		process.exit();
-	});
+	const taskChoices = ["Start Scraping", "Edit Config File", "Quit"];
+	inquirer
+		.prompt({
+			type: "list",
+			name: "action",
+			message: "Select the task: ",
+			choices: taskChoices
+		})
+		.then(ans =>
+			ans.action === taskChoices[0]
+				? scraping()
+				: ans.action === taskChoices[1]
+				? edit()
+				: ans.action === taskChoices[2]
+				? process.exit()
+				: tasks()
+		)
+		.catch(() => tasks());
 };
 
 var scraper, keyword;
 const scraping = () => {
+	console.log("\n");
 	inquirer
 		.prompt({
 			type: "list",
 			name: "website",
 			message: "Select a website to scrape from the following choices:",
-			choices: ["FirstCry.com", "Walmart.com", "Amazon.com"]
+			choices: [...Object.keys(config.websites), "All", "Exit the tool"]
 		})
 		.then(ans => {
 			// console.log("You selected", ans.website);
-			scraper = require(config.websites[ans.website].scraper);
-		})
-		.then(() =>
+			// if (ans.website == "Go Back") tasks();
+			if (ans.website == "Exit the tool") {
+				process.exit();
+			} else if (ans.website == "All") {
+				scrapeAll();
+				return;
+			} else scraper = require(config.websites[ans.website].scraper);
 			inquirer
 				.prompt({
 					type: "list",
 					name: "keyword",
 					message: "Enter search keyword:",
-					choices: config.keywords
+					choices: [...config.keywords, "Exit the tool"]
 				})
-				.then(ans => (keyword = ans.keyword))
-				.then(() => {
+				.then(ans => {
+					// if (ans.website == "Go Back") scraping();
+					if (ans.keyword == "Exit the tool") process.exit();
+					else keyword = ans.keyword;
 					spinner.start();
-					// stdin.resume();
+					process.stdout.write("\033c");
 					scraper
 						.getList(keyword)
 						.then(res => {
 							spinner.stop();
-							console.log("\n Completed!");
-							cli();
+							console.log("\nCompleted!");
+							tasks();
 						})
 						.catch(err => {
 							spinner.stop();
 							console.log("Some Error occured", err);
-							cli();
+							tasks();
 						});
 				})
-		)
+				.catch(err => {
+					console.log(err);
+					spinner.stop();
+					tasks();
+				});
+		})
 		.catch(err => {
+			console.log(err);
 			spinner.stop();
-			cli();
+			tasks();
 		});
 };
 
-module.exports = { spinner };
+const scrapeAll = () => {
+	spinner.start();
+	helper
+		.asyncForEach(
+			[...Object.keys(config.websites)],
+			async site =>
+				new Promise((resolve, reject) => {
+					scraper = require(config.websites[site].scraper);
+					helper
+						.asyncForEach(
+							[...config.keywords],
+							async kword =>
+								new Promise((res, rej) => {
+									scraper
+										.getList(kword)
+										.then(stat => {
+											res(true);
+										})
+										.catch(err => {
+											rej(err);
+										});
+								})
+						)
+						.then(res => resolve(true))
+						.catch(err => reject(err));
+				})
+		)
+		.then(stat => {
+			spinner.stop();
+			console.log("\nCompleted! ?");
+			tasks();
+		})
+		.catch(err => {
+			console.log(err);
+			spinner.stop();
+			tasks();
+		});
+};
+// process.stdout.write('\033c');
+
+console.log("Launching Scraper...");
+connectDb().then(() => {
+	console.log("MongoDb connected");
+
+	tasks();
+});

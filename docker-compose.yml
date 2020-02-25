@@ -1,9 +1,11 @@
-version: "2"
-services:
-    web:
+version: "3"
+
+services: 
+  cli:
     build: .
-    ports: — "8080:8080"
-    depends_on: — mongo
-    mongo:
-        image: mongo
-        ports: — "27017:27017"
+    depends_on: 
+      - mongo
+  mongo:
+    image: mongo
+    ports: 
+      - "27017:17017"

@@ -1,12 +1,18 @@
 FROM node:12
 # Create app directory
+
+
+# ENV http_proxy http://172.16.2.30:8080/
+# ENV https_proxy http://172.16.2.30:8080/
+
 WORKDIR /usr/src/app
 # Install app dependencies
-COPY package*.json ./
+COPY package.json /usr/src/app
 
 RUN npm install
 # Copy app source code
-COPY . .
+COPY . /usr/src/app
 #Expose port? and start application
-EXPOSE 8080
+# EXPOSE 8080
 CMD [ "npm", "start" ]
+

@@ -1,6 +1,7 @@
 const cheerio = require("cheerio");
 
 const helper = require("../helper");
+const console = require("../console");
 const config = require("../config");
 const queries = require("../mongodb/queries");
 
@@ -60,7 +61,7 @@ const getList = async (keyword, page) =>
 												.catch(err => rej(err));
 										})
 										.catch(err => rej(err));
-								} else res(true);
+								} else return;
 							})
 					)
 					.then(stat => {
@@ -87,6 +88,12 @@ const getDetail = async pid =>
 			.fetchData(descriptionUrl + pid)
 			.then(res => {
 				const $ = cheerio.load(res);
+
+				if ($("#dp").hasClass("book")) {
+					queries.deleteProduct(pid);
+					throw Error("Not a Food Product. Deleting");
+				}
+
 				const images = new Set();
 				$(".aplus-module-wrapper img").each((key, ele) => {
 					images.add($(ele).attr("src"));

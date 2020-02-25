@@ -1,3 +1,4 @@
+const console = require("../console");
 const Product = require("./models").Product;
 const axios = require("axios-https-proxy-fix");
 const proxy = {
@@ -61,7 +62,7 @@ const addDetail = async p =>
 								img = { url: i };
 								Product.updateOne({ pid: p.pid }, { $push: { images: img } }, er => {
 									if (er) console.log({ err: "Unable to update db", detail: er });
-									else console.log({ err: "Unable to download image due to network issues", detail: err });
+									else console.log({ err: "Unable to download image due to network issues", detail: err.detail });
 								});
 							});
 					});
@@ -86,4 +87,11 @@ const addDetail = async p =>
 		});
 	});
 
-module.exports = { create, addDetail };
+const deleteProduct = async pid =>
+	new Promise((resolve, reject) => {
+		Product.deleteOne({ pid })
+			.then(res => resolve(true))
+			.catch(err => reject(err));
+	});
+
+module.exports = { create, addDetail, deleteProduct };
