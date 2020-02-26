@@ -6,7 +6,7 @@ const config = require("../config"),
 	helper = require("../helper"),
 	queries = require("../mongodb/queries");
 
-const baseUrl = config.websites["Walmart.com"].baseUrl,
+const baseUrl = config.websites.Walmart.baseUrl,
 	searchUrl = baseUrl + "/search?query=",
 	descriptionUrl = baseUrl + "/ip/";
 
@@ -22,7 +22,6 @@ const getList = async (keyword, page) =>
 				let a;
 				try {
 					a = JSON.parse($("#searchContent").html());
-					console.log(a.searchContent.preso);
 				} catch (e) {
 					reject({ detail: "Unable to load url properly." });
 					return;
@@ -87,9 +86,8 @@ const getDetail = async (url, pid) =>
 					reviews = new Set(),
 					a = JSON.parse($("script#item").html());
 				if (!a || !a.hasOwnProperty("item")) {
-					reject({ error: "Unable to detail load url properly" });
-					console.log("\n", { error: "Unable to load detail url properly", url });
-					return;
+					queries.deleteProduct(pid);
+					resolve(true);
 				}
 				const name = a.item.product.midasContext.query,
 					mod = a.item.product.idmlMap[a.item.product.midasContext.productId].modules;
@@ -110,18 +108,19 @@ const getDetail = async (url, pid) =>
 					// process.exit();
 				}
 				[...a.item.product.buyBox.products[0].images].forEach(ele => images.add(ele.url));
+				let description = $$$(mod.LongDescription.product_long_description.displayValue).text();
 				queries
 					.addDetail({
 						pid,
 						name,
-						descripton: $$$(mod.LongDescription.product_long_description.displayValue).text(),
+						description,
 						// specifications: mod.Specifications.specifications.values[0],
 						// nutritionFacts: mod.NutritionFacts,
 						// creviews: creviews,
 						reviews: [...reviews],
 						images: [...images]
 					})
-					.then(stat => resolve(stat))
+					.then(stat => resolve(true))
 					.catch(err => {
 						console.log({ error: true, details: err });
 						reject(err);

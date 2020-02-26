@@ -1,22 +1,18 @@
 {
-  "websites": {
-    "Walmart.com": {
-      "baseUrl": "https://www.walmart.com",
-      "scraper": "./scrapers/walmartScraper"
-    },
-    "Amazon.com": {
-      "baseUrl": "https://www.amazon.com",
-      "scraper": "./scrapers/amazonScraper"
-    },
-    "FirstCry.com": {
-      "baseUrl": "https://www.firstcry.com",
-      "searchEndpoint": "/svcs/search.svc/GetSearchPagingProducts_new?PageSize=20&Q=",
-      "scraper": "./scrapers/firstcryScraper"
-    }
-  },
-  "keywords": [
-    "baby food",
-    "infant nutrition",
-    "baby foods"
-  ]
+	"websites": {
+		"FirstCry": {
+			"baseUrl": "https://www.firstcry.com",
+			"scraper": "./scrapers/firstcryScraper",
+			"searchEndpoint": "/svcs/search.svc/GetSearchPagingProducts_new?PageSize=20&Q="
+		},
+		"Walmart": {
+			"baseUrl": "https://www.walmart.com",
+			"scraper": "./scrapers/walmartScraper"
+		},
+		"Amazon": {
+			"baseUrl": "https://www.amazon.com",
+			"scraper": "./scrapers/amazonScraper"
+		}
+	},
+	"keywords": ["baby food", "infant nutrition", "baby foods"]
 }

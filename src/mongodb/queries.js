@@ -1,11 +1,10 @@
+const axios = require("axios");
+const rax = require("retry-axios");
+const interceptorId = rax.attach();
+
 const console = require("../console");
+const helper = require("../helper");
 const Product = require("./models").Product;
-const axios = require("axios-https-proxy-fix");
-const proxy = {
-	host: "172.16.2.30",
-	port: 8080
-};
-const axiosConfig = { proxy, responseType: "arraybuffer" };
 
 const create = async p =>
 	new Promise((resolve, reject) => {
@@ -37,17 +36,18 @@ const create = async p =>
 
 const addDetail = async p =>
 	new Promise((resolve, reject) => {
-		Product.findOne({ pid: p.pid }).countDocuments((err, count) => {
+		Product.findOne({ pid: p.pid }).countDocuments(async (err, count) => {
 			if (err) {
-				console.log({ error: true, detail: err });
+				console.errror({ error: true, detail: err });
 				reject({ err: "Some error occured", detail: err });
 			}
 			if (count > 0) {
-				let { pid, images, reviews, ...rest } = { ...p };
+				let { pid, images, reviews, ...rest } = p;
+				// console.log({ ...p }, { ...rest }, "\n");
 				if (images && images.length !== 0) {
-					images.forEach(i => {
+					await helper.asyncForEach(images, i => {
 						axios
-							.get(i, axiosConfig)
+							.get(i, { responseType: "arraybuffer" })
 							.then(res => {
 								// let img = new image();
 								const img = {
@@ -56,20 +56,25 @@ const addDetail = async p =>
 								};
 
 								// img.save();
-								Product.updateOne({ pid: p.pid }, { $push: { images: img } });
+								Product.updateOne({ pid: p.pid }, { $push: { images: img } }, er => {
+									if (er) {
+										if (er.code == 10334) console.warn({ warning: "Size of image > 16 MB; Skipped downloading" });
+										else console.error({ error: "Unable to update db", detail: er });
+									}
+								});
 							})
-							.catch(err => {
+							.catch(error => {
 								img = { url: i };
 								Product.updateOne({ pid: p.pid }, { $push: { images: img } }, er => {
-									if (er) console.log({ err: "Unable to update db", detail: er });
-									else console.log({ err: "Unable to download image due to network issues", detail: err.detail });
+									if (er) console.error({ error: "Unable to update db", detail: er });
+									else console.warn({ error: "Unable to download image due to network issues", detail: error });
 								});
 							});
 					});
 				}
 				if (reviews && reviews.length !== 0)
 					Product.updateOne({ pid: p.pid }, { $push: { reviews: { $each: reviews } } }, er => {
-						if (er) console.log({ err: "Unable to update db for pid " + p.pid, detail: er });
+						if (er) console.error({ err: "Unable to update db for pid " + p.pid, detail: er });
 					});
 
 				Product.updateOne({ pid: p.pid }, { ...rest })

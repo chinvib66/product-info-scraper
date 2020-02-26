@@ -5,24 +5,26 @@ const console = require("../console");
 const config = require("../config");
 const queries = require("../mongodb/queries");
 
-const baseUrl = config.websites["Amazon.com"].baseUrl;
+const baseUrl = config.websites.Amazon.baseUrl;
 const searchUrl = baseUrl + "/s?k=";
 const descriptionUrl = baseUrl + "/gp/product/";
 const reviewUrl = baseUrl + "/product-reviews/";
+var ncp = require("copy-paste");
 
 const getList = async (keyword, page) =>
 	new Promise((resolve, reject) => {
 		let listUrl = searchUrl + keyword;
 		listUrl = page !== undefined ? listUrl + "&page=" + page : listUrl;
+
 		helper
 			.fetchData(listUrl)
 			.then(resp => {
 				const $ = cheerio.load(resp);
-
+				$("").each;
 				helper
 					.cheerioAsyncEach(
 						$(".s-search-results .s-result-item"),
-						async (key, ele) =>
+						async (ele, key) =>
 							new Promise((res, rej) => {
 								const $_ = cheerio.load(ele);
 								var pid = $(ele).attr("data-asin");
@@ -55,16 +57,18 @@ const getList = async (keyword, page) =>
 											getDetail(pid)
 												.then(stat =>
 													getReviews(pid)
-														.then(stat => res(stat))
+														.then(stat => res(true))
 														.catch(err => rej(err))
 												)
 												.catch(err => rej(err));
 										})
 										.catch(err => rej(err));
-								} else return;
+								} else {
+									res(true);
+								}
 							})
 					)
-					.then(stat => {
+					.then(sResults => {
 						let nextPage =
 							null ||
 							$(".a-pagination .a-selected")
@@ -125,7 +129,7 @@ const getDetail = async pid =>
 						description,
 						images: [...images]
 					})
-					.then(stat => resolve(stat))
+					.then(stat => resolve(true))
 					.catch(err => {
 						console.log({ error: true, details: err });
 						reject(err);
@@ -163,7 +167,7 @@ const getReviews = async pid =>
 						pid: pid,
 						reviews: [...reviews]
 					})
-					.then(stat => resolve(stat))
+					.then(stat => resolve(true))
 					.catch(err => reject(err));
 			})
 			.catch(err => reject(err));

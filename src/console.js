@@ -29,4 +29,4 @@ logger.add(
 // Add log command
 logger.log = logger.info;
 
-module.exports = console; //logger;
+module.exports = console; //;

@@ -11,16 +11,21 @@ const spinner = require("./helper").spinner;
 const edit = () => {
 	console.log("\n Editing Config File\n");
 	let file = editJsonFile(`${__dirname}/config.json`, { autosave: true });
-	console.log(file.toObject());
+	console.log(file.toObject(), "\n");
 	inquirer
-		.prompt({ type: "list", name: "task", message: "Select Action", choices: ["Set", "Delete", "Go Back"] })
+		.prompt({
+			type: "list",
+			name: "task",
+			message: "Select Action",
+			choices: ["Set", "Add Keyword(s)", "Delete Keyword(s)", "Delete", "Go Back"]
+		})
 		.then(ans => {
 			ans.task === "Set"
 				? inquirer
 						.prompt({
 							type: "input",
 							name: "set",
-							message: "Type changes in format specified. (Refer Documentation) \n"
+							message: "Type changes in format specified. (Refer Readme) \n"
 						})
 						.then(ans => {
 							let key = ans.set.split(":")[0],
@@ -32,27 +37,68 @@ const edit = () => {
 							file.set(key, val);
 						})
 						.then(() => edit())
-						.catch(err => console.log(err))
+						.catch(err => {
+							console.log(err);
+							edit();
+						})
+				: ans.task === "Add Keyword(s)"
+				? inquirer
+						.prompt({
+							type: "input",
+							name: "add",
+							message: "Type keywords in format specified. (Refer Readme) \n"
+						})
+						.then(ans => {
+							file.set("keywords", [...file.get("keywords"), ...ans.add.split(",")]);
+						})
+						.then(() => edit())
+						.catch(err => {
+							console.log(err);
+							edit();
+						})
+				: ans.task === "Delete Keyword(s)"
+				? inquirer
+						.prompt({
+							type: "input",
+							name: "del",
+							message: "Type keywords in format specified. (Refer Readme) \n"
+						})
+						.then(ans => {
+							let toDelete = ans.del.split(",");
+							file.set(
+								"keywords",
+								[...file.get("keywords")].filter(ele => {
+									return toDelete.indexOf(ele) === -1;
+								})
+							);
+						})
+						.then(() => edit())
+						.catch(err => {
+							console.log(err);
+							edit();
+						})
 				: ans.task === "Delete"
 				? inquirer
 						.prompt({
 							type: "input",
 							name: "delete",
-							message: "Type changes in format specified. (Refer Documentation) \n"
+							message: "Type changes in format specified. (Refer Readme) \n"
 						})
 						.then(ans => {
-							let key = ans.delete;
-							file.unset(key);
+							file.unset(ans.delete);
 						})
 						.then(() => edit())
-						.catch(err => console.log(err))
-				: tasks();
+						.catch(err => {
+							console.log(err);
+							edit();
+						})
+				: edit();
 		});
 };
 
 const tasks = () => {
 	console.log("\n");
-	const taskChoices = ["Start Scraping", "Edit Config File", "Quit"];
+	const taskChoices = ["Start Scraping", "Show Config", "Edit Config", "Quit"];
 	inquirer
 		.prompt({
 			type: "list",
@@ -63,9 +109,14 @@ const tasks = () => {
 		.then(ans =>
 			ans.action === taskChoices[0]
 				? scraping()
-				: ans.action === taskChoices[1]
-				? edit()
 				: ans.action === taskChoices[2]
+				? () => {
+						console.log(config);
+						tasks();
+				  }
+				: ans.action === taskChoices[2]
+				? edit()
+				: ans.action === taskChoices[3]
 				? process.exit()
 				: tasks()
 		)
@@ -80,12 +131,14 @@ const scraping = () => {
 			type: "list",
 			name: "website",
 			message: "Select a website to scrape from the following choices:",
-			choices: [...Object.keys(config.websites), "All", "Exit the tool"]
+			choices: [...Object.keys(config.websites), "All", "Go Back", "Exit the tool"]
 		})
 		.then(ans => {
 			// console.log("You selected", ans.website);
-			// if (ans.website == "Go Back") tasks();
-			if (ans.website == "Exit the tool") {
+			if (ans.website == "Go Back") {
+				tasks();
+				return;
+			} else if (ans.website == "Exit the tool") {
 				process.exit();
 			} else if (ans.website == "All") {
 				scrapeAll();
@@ -96,11 +149,13 @@ const scraping = () => {
 					type: "list",
 					name: "keyword",
 					message: "Enter search keyword:",
-					choices: [...config.keywords, "Exit the tool"]
+					choices: [...config.keywords, "Go Back", "Exit the tool"]
 				})
 				.then(ans => {
-					// if (ans.website == "Go Back") scraping();
-					if (ans.keyword == "Exit the tool") process.exit();
+					if (ans.keyword == "Go Back") {
+						scraping();
+						return;
+					} else if (ans.keyword == "Exit the tool") process.exit();
 					else keyword = ans.keyword;
 					spinner.start();
 					process.stdout.write("\033c");
@@ -159,7 +214,7 @@ const scrapeAll = () => {
 		)
 		.then(stat => {
 			spinner.stop();
-			console.log("\nCompleted! ?");
+			console.log("\nCompleted!");
 			tasks();
 		})
 		.catch(err => {
@@ -172,8 +227,13 @@ const scrapeAll = () => {
 
 module.exports = () => {
 	console.log("Launching Scraper...");
-	connectDb().then(() => {
-		console.log("MongoDb connected");
-		tasks();
-	});
+	connectDb()
+		.then(() => {
+			console.log("MongoDb connected");
+			tasks();
+		})
+		.catch(err => {
+			console.log(err);
+			process.exit();
+		});
 };

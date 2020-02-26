@@ -5,9 +5,9 @@ const config = require("../config");
 const helper = require("../helper");
 const queries = require("../mongodb/queries");
 
-const baseUrl = config.websites["FirstCry.com"].baseUrl;
+const baseUrl = config.websites.FirstCry.baseUrl;
 // const searchUrl = baseUrl + "/search.aspx?q=";
-const searchUrl = baseUrl + config.websites["FirstCry.com"].searchEndpoint;
+const searchUrl = baseUrl + config.websites.FirstCry.searchEndpoint;
 const detailUrl = (pid, pname, pmaker) => `${baseUrl}/${pmaker.toLowerCase()}/${pname.toLowerCase()}/product-detail`;
 
 const getList = async (keyword, page) =>
@@ -18,12 +18,9 @@ const getList = async (keyword, page) =>
 		helper
 			.fetchData(listUrl)
 			.then(resp => {
-				// const $ = cheerio.load(resp);
-
 				const data = JSON.parse(resp.ProductResponse).hits,
 					count = data.found,
 					totalPages = count / 20 + 1;
-				// console.log(data.hit);
 				helper
 					.asyncForEach(
 						data.hit,
@@ -39,7 +36,7 @@ const getList = async (keyword, page) =>
 									.create({ pid, name, url, keyword, rating, price })
 									.then(stat => {
 										getDetail(url, pid)
-											.then(stat => res(stat))
+											.then(stat => res(true))
 											.catch(err => rej(err));
 									})
 									.catch(err => rej(err));
@@ -120,7 +117,7 @@ const getDetail = async (url, pid) =>
 						images: [...images],
 						reviews: [...reviews]
 					})
-					.then(stat => resolve(stat))
+					.then(stat => resolve(true))
 					.catch(err => {
 						console.log({ error: true, details: err });
 						reject(err);

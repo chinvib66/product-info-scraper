@@ -1,13 +1,10 @@
-// const axios = require("axios");
-// const proxy = {}
+const axios = require("axios");
+const rax = require("retry-axios");
 const console = require("./console");
-const axios = require("axios-https-proxy-fix");
-const proxy = {
-	host: "172.16.2.30",
-	port: 8080
-};
+
 const ui = require("clui");
 
+const interceptorId = rax.attach();
 const spinner = new ui.Spinner("Executing commands...");
 
 const cleanUrl = (url, baseUrl) => {
@@ -22,7 +19,23 @@ const fetchData = async url =>
 		process.stdout.clearLine();
 		spinner.message("Fetching " + url.slice(12, 108));
 		axios
-			.get(url, { proxy })
+			.get(url, {
+				raxConfig: {
+					retry: 3,
+					noResponseRetries: 2,
+					retryDelay: 100,
+					statusCodesToRetry: [
+						[100, 199],
+						[429, 429],
+						[500, 599]
+					],
+					backoffType: "exponential",
+					onRetryAttempt: err => {
+						const cfg = rax.getConfig(err);
+						console.log(`Retry attempt #${cfg.currentRetryAttempt}`);
+					}
+				}
+			})
 			.then(resp => {
 				resolve(resp.data);
 				process.stdout.clearLine();
@@ -51,14 +64,10 @@ async function asyncForEach(array, callback) {
 }
 
 const cheerioAsyncEach = async (cheerioElement, fn) => {
-	var i = 0,
-		len = cheerioElement.length;
-	let b = true;
-	try {
-		b = await fn.call(cheerioElement[i], i, cheerioElement[i]);
-	} catch (e) {}
-
-	while (i < len && b !== false) ++i;
+	var len = cheerioElement.length;
+	for (let i = 0; i < len; i++) {
+		await fn(cheerioElement[i], i);
+	}
 	return cheerioElement;
 };
 
