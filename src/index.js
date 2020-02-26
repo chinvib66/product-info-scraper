@@ -5,6 +5,7 @@ const config = require("./config");
 var file = editJsonFile(`${__dirname}/config.json`, { autosave: true });
 const helper = require("./helper");
 const console = require("./console");
+
 const connectDb = require("./mongodb/connection");
 
 const spinner = require("./helper").spinner;
@@ -92,13 +93,13 @@ const edit = () => {
 							console.log(err);
 							edit();
 						})
-				: edit();
+				: tasks();
 		});
 };
 
 const tasks = () => {
 	console.log("\n");
-	const taskChoices = ["Start Scraping", "Show Config", "Edit Config", "Quit"];
+	const taskChoices = ["Start Scraping", "View & Edit Config", "Quit"];
 	inquirer
 		.prompt({
 			type: "list",
@@ -109,14 +110,9 @@ const tasks = () => {
 		.then(ans =>
 			ans.action === taskChoices[0]
 				? scraping()
-				: ans.action === taskChoices[2]
-				? () => {
-						console.log(config);
-						tasks();
-				  }
-				: ans.action === taskChoices[2]
+				: ans.action === taskChoices[1]
 				? edit()
-				: ans.action === taskChoices[3]
+				: ans.action === taskChoices[2]
 				? process.exit()
 				: tasks()
 		)

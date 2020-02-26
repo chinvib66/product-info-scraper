@@ -9,7 +9,6 @@ const baseUrl = config.websites.Amazon.baseUrl;
 const searchUrl = baseUrl + "/s?k=";
 const descriptionUrl = baseUrl + "/gp/product/";
 const reviewUrl = baseUrl + "/product-reviews/";
-var ncp = require("copy-paste");
 
 const getList = async (keyword, page) =>
 	new Promise((resolve, reject) => {
